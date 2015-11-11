@@ -1,5 +1,5 @@
 Router.configure({
-	layoutTemplate: 'layout'
+    layoutTemplate: 'layout'
 });
 
 // Router.map(function (argument) {
@@ -9,14 +9,12 @@ Router.configure({
 // 	})
 // })
 
-Router.route('/posts', function () {
-  this.render('posts');
- });
+Router.route('/', function() {
+    this.render('posts');
+}, {
+    name: 'posts'
+});
 
-Router.route('/about', function () {
-  this.render('about');
- });
-
-Router.route('/', function () {
-  this.render('layout');
- });
+Router.route('/about', function() {
+    this.render('about');
+});
