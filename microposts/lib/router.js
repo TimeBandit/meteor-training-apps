@@ -2,13 +2,6 @@ Router.configure({
     layoutTemplate: 'layout'
 });
 
-// Router.map(function (argument) {
-// 	this.route('posts', {
-// 		path: '/',
-// 		template: 'posts'
-// 	})
-// })
-
 Router.route('/', function() {
     this.render('posts');
 }, {
@@ -17,4 +10,8 @@ Router.route('/', function() {
 
 Router.route('/about', function() {
     this.render('about');
+});
+
+Router.route('/profile', function() {
+    this.render('profile');
 });

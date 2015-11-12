@@ -1,8 +1,10 @@
 <template name="posts">
+    {{#if currentUser}}
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#postModal">
         Say Something!
     </button>
+    {{/if}}
     <!-- Modal -->
     <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="myPostModalLabel">
         <div class="modal-dialog" role="document">
@@ -21,11 +23,33 @@
             </div>
         </div>
     </div>
+    <!-- Modal End-->
     <hr>
-    <div class="row">
-    	<div class="col-md-1">
-    		<img src="img/profile.JPG" alt="">
-    	</div>
-    	<div class="col-md-11"></div>
+    <div class="row post">
+        <div class="col-md-1">
+            <img src="img/profile.JPG" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-11">
+            <small>Posted By Me at 13:33am</small>
+            <p>This is the users post</p>
+        </div>
+    </div>
+    <div class="row post">
+        <div class="col-md-1">
+            <img src="img/profile.JPG" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-11">
+            <small>Posted By Me at 13:33am</small>
+            <p>This is the users post</p>
+        </div>
+    </div>
+    <div class="row post">
+        <div class="col-md-1">
+            <img src="img/profile.JPG" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-11">
+            <small>Posted By Me at 13:33am</small>
+            <p>This is the users post</p>
+        </div>
     </div>
 </template>
