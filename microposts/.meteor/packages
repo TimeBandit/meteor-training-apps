@@ -24,3 +24,5 @@ accounts-password
 ian:accounts-ui-bootstrap-3
 cfs:standard-packages
 cfs:gridfs
+aldeed:collection2
+aldeed:autoform
