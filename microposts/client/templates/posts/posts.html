@@ -11,45 +11,31 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myPostModalLabel">Modal title</h4>
+                    <h4 class="modal-title" id="myPostModalLabel">Create A Post</h4>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
+                    {{#autoForm collection="Posts" id="insertPostForm" type="insert"}}
+                    {{> afQuickField name="body" rows=4}}
+                    <button type="submit" class="btn btn-primary">Send</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    {{/autoForm}}
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal End-->
-    <hr>
+    <hr> 
+    {{#each posts}}
     <div class="row post">
         <div class="col-md-1">
-            <img src="img/profile.JPG" class="img-responsive img-thumbnail" alt="">
+            <img src="{{getProfileImg userId}}" class="img-responsive img-thumbnail" alt="">
         </div>
         <div class="col-md-11">
-            <small>Posted By Me at 13:33am</small>
-            <p>This is the users post</p>
+            <small>Posted By {{username}} at {{createdAt}}</small>
+            <p>{{body}}</p>
         </div>
     </div>
-    <div class="row post">
-        <div class="col-md-1">
-            <img src="img/profile.JPG" class="img-responsive img-thumbnail" alt="">
-        </div>
-        <div class="col-md-11">
-            <small>Posted By Me at 13:33am</small>
-            <p>This is the users post</p>
-        </div>
-    </div>
-    <div class="row post">
-        <div class="col-md-1">
-            <img src="img/profile.JPG" class="img-responsive img-thumbnail" alt="">
-        </div>
-        <div class="col-md-11">
-            <small>Posted By Me at 13:33am</small>
-            <p>This is the users post</p>
-        </div>
-    </div>
+    {{else}}
+        <p>No Posts</p>
+    {{/each}}
 </template>

@@ -4,8 +4,10 @@ Router.configure({
 
 Router.route('/', function() {
     this.render('posts');
-}, {
-    name: 'posts'
+});
+
+Router.route('/posts', function() {
+    Router.go('/');
 });
 
 Router.route('/about', function() {
