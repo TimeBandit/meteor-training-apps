@@ -3,10 +3,29 @@ ProfileImages = new FS.Collection('ProfileImages', {
     stores: [new FS.Store.GridFS('ProfileImages')]
 });
 
+ProfileImages.allow({
+	insert: function (userId, doc) {
+		return true;
+	},
+	update: function (userId, doc, fields, modifier) {
+		return true;
+	},
+	download: function () {
+		return true;
+	}
+});
+
 // Collection that connects the users to the images
 UserImages = new Mongo.Collection('UserImages');
 
 Posts = new Mongo.Collection('posts');
+
+Posts.allow({
+	insert: function (userId, doc) {
+		return true;
+	},
+	fetch: ['owner']
+});
 
 Posts.attachSchema(new SimpleSchema({
     body: {
