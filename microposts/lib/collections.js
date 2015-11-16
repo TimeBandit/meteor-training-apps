@@ -3,6 +3,7 @@ ProfileImages = new FS.Collection('ProfileImages', {
     stores: [new FS.Store.GridFS('ProfileImages')]
 });
 
+// read/write permissions for ProfileImages collection
 ProfileImages.allow({
 	insert: function (userId, doc) {
 		return true;
@@ -27,6 +28,7 @@ Posts.allow({
 	fetch: ['owner']
 });
 
+// setting up a schema with collections2 package
 Posts.attachSchema(new SimpleSchema({
     body: {
         type: String,

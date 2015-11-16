@@ -1,11 +1,14 @@
+// helper delivers with account-ui-bootstrap-3
 Template._loginButtonsLoggedInDropdown.events({
     'click #login-buttons-edit-profile': function(event) {
         Router.go('profile');
     }
 });
 
+// template events handler, stores images to FSCollection
 Template.profile.events({
     'submit .edit-profile': function(event) {
+        // store the file in a var
         var file = $('#profileImage').get(0).files[0];
         console.log(file);
 

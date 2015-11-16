@@ -1,3 +1,4 @@
+// configure the routes using iron router
 Router.configure({
     layoutTemplate: 'layout'
 });
