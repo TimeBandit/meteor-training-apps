@@ -1,0 +1,1036 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"find",
+				"find	Meteor: collection.find(selector, [options])"
+			],
+			[
+				"P",
+				"Posts"
+			],
+			[
+				"Pr",
+				"ProfileImages"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"fin",
+				"findOne	Meteor: collection.findOne(selector, [options])"
+			],
+			[
+				"ima",
+				"imageLoc"
+			],
+			[
+				"er",
+				"err"
+			],
+			[
+				"ev",
+				"events	Meteor: Template.myTemplate.events(eventMap)"
+			],
+			[
+				"pr",
+				"profile"
+			],
+			[
+				"use",
+				"UserImages"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"tod",
+				"todoId"
+			],
+			[
+				"to",
+				"todoId"
+			],
+			[
+				"de",
+				"deleteTodo"
+			],
+			[
+				"add",
+				"addTodo"
+			],
+			[
+				"met",
+				"Meteor"
+			],
+			[
+				"set",
+				"setChecked"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"if",
+				"if	Meteor {{#if}}"
+			],
+			[
+				"u",
+				"userId	Meteor: this.userId"
+			],
+			[
+				"eve",
+				"event	Meteor: Add a new event item"
+			],
+			[
+				"c",
+				"checked"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"event",
+				"event	Meteor: Add a new event item"
+			],
+			[
+				"create",
+				"createdAt"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"he",
+				"helpers	Meteor: Template.myTemplate.helpers(helpers)"
+			],
+			[
+				"help",
+				"helpers	Meteor: Template.myTemplate.helpers(helpers)"
+			],
+			[
+				"hel",
+				"Helpers"
+			],
+			[
+				"Mone",
+				"Mongo.Collection	new Mongo.Collection(name, [options])"
+			],
+			[
+				"cat",
+				"cat"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"ca",
+				"catItem"
+			],
+			[
+				"in",
+				"initialCats"
+			],
+			[
+				"o",
+				"observableArray"
+			],
+			[
+				"click",
+				"clickCount"
+			],
+			[
+				"im",
+				"imgSrc"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"get",
+				"getCurrentCat"
+			],
+			[
+				"up",
+				"updateCat"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"image",
+				"imageUrl"
+			],
+			[
+				"val",
+				"validForm"
+			],
+			[
+				"form",
+				"form"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"lis",
+				"listView"
+			],
+			[
+				"img",
+				"imgUrl"
+			],
+			[
+				"cli",
+				"clickCount"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"fl",
+				"fl-n	float: none;"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"h",
+				"innerHTML"
+			],
+			[
+				"r",
+				"render"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"ge",
+				"getElementsByClassName"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"gr",
+				"group"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"bi",
+				"buildLinks"
+			],
+			[
+				"_",
+				"_newNodes"
+			],
+			[
+				"tar",
+				"targetId"
+			],
+			[
+				"sou",
+				"sourceId"
+			],
+			[
+				"nod",
+				"nodes"
+			],
+			[
+				"bui",
+				"buildnewNodes"
+			],
+			[
+				"li",
+				"links"
+			],
+			[
+				"node",
+				"nodejs"
+			],
+			[
+				"se",
+				"setCurrentCat"
+			],
+			[
+				"cur",
+				"currentCat"
+			],
+			[
+				"cu",
+				"currentCat"
+			],
+			[
+				"catL",
+				"catList"
+			],
+			[
+				"mo",
+				"model"
+			],
+			[
+				"make",
+				"makeCat"
+			],
+			[
+				"da",
+				"date"
+			],
+			[
+				"fi",
+				"fill"
+			],
+			[
+				"st",
+				"stroke"
+			],
+			[
+				"ti",
+				"this"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"cre",
+				"createElement"
+			],
+			[
+				"a",
+				"addEventListener"
+			],
+			[
+				"t",
+				"text"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ra",
+				"randomName"
+			],
+			[
+				"che",
+				"chewieCount"
+			],
+			[
+				"ch",
+				"chewieCount"
+			],
+			[
+				"pop",
+				"poplinreCount"
+			],
+			[
+				"p",
+				"poplinre-count"
+			],
+			[
+				"lab",
+				"label"
+			],
+			[
+				"shift",
+				"shiftX"
+			],
+			[
+				"no",
+				"nodes"
+			],
+			[
+				"labelAnchor",
+				"labelAnchorLinks"
+			],
+			[
+				"art",
+				"attr"
+			],
+			[
+				"sub",
+				"subNetNodes"
+			],
+			[
+				"rem",
+				"remove"
+			],
+			[
+				"anch",
+				"anchorLink"
+			],
+			[
+				"shi",
+				"shiftX"
+			],
+			[
+				"ancho",
+				"anchorNode"
+			],
+			[
+				"link",
+				"Links"
+			],
+			[
+				"noe",
+				"nodeArray"
+			],
+			[
+				"force",
+				"force2"
+			],
+			[
+				"an",
+				"anchorNode"
+			],
+			[
+				"ano",
+				"anchorNode"
+			],
+			[
+				"op",
+				"fill-opacity"
+			],
+			[
+				"su",
+				"subNetLinks"
+			],
+			[
+				"ea",
+				"forEach"
+			],
+			[
+				"fo",
+				"force"
+			],
+			[
+				"att",
+				"attr"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"vis",
+				"visited"
+			],
+			[
+				"GR",
+				"graph"
+			],
+			[
+				"JS",
+				"jsonData"
+			],
+			[
+				"json",
+				"jsonData"
+			],
+			[
+				"nodes",
+				"nodes"
+			],
+			[
+				"remo",
+				"removeAllLinks"
+			],
+			[
+				"curre",
+				"currentIndex"
+			],
+			[
+				"gra",
+				"graph"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: template",
+				"Snippet: Meteor: Template.myTemplate.helpers(helpers)"
+			],
+			[
+				"Snippet: temp",
+				"Snippet: Meteor: Template.myTemplate.helpers(helpers)"
+			],
+			[
+				"Snippet: met",
+				"Snippet: Meteor Markdown Spacebars"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"gi",
+				"Git: Show Tags"
+			],
+			[
+				"g",
+				"Git: Commit history"
+			],
+			[
+				"bra",
+				"BracketHighlighter: Match Brackets (ignore threshold)"
+			],
+			[
+				"js",
+				"JSHint: Set `node` Path"
+			],
+			[
+				"contro",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Build: New Build System"
+			]
+		],
+		"width": 710.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"dir()",
+			"dir",
+			"ls",
+			"import urllib,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib.install_opener( urllib.build_opener( urllib.ProxyHandler()) ); by = urllib.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') ",
+			"import urllib,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') ",
+			"import os",
+			"import urllib",
+			"import urllib2",
+			"import sys",
+			"print('hi')",
+			"print 'hi'",
+			"import urllib2",
+			"import urlib2",
+			"import urllib2",
+			"import sys",
+			"import urlib2",
+			"import urllib2,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') ",
+			"import urllib2",
+			"import urllib2,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"file_history":
+	[
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/common.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/server/common.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/lib/router.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/lib/collections.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/profile/profile.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/posts/posts.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/posts/posts.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/profile/profile.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/stylesheets/microposts.css",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/navbar.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/profile/editProfileButton.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/layout.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/home/home.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/home/home.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/stylesheets/notfound.css",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/notfound.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/head.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/about/about.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/about/about.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/HTML_TEMPLATE.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/userposts/userposts.js",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/client/templates/userposts/userposts.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/microposts/microposts.css",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/todos/todos.css",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/todos/todos.html",
+		"/home/timebandit/Documents/projects/toy-meteor-apps/todos/todos.js",
+		"/home/timebandit/Documents/projects/blog/content/pages/Codework.md",
+		"/home/timebandit/Documents/projects/blog/content/pages/Javascript.md",
+		"/home/timebandit/Documents/projects/catClicker2/js/app.js",
+		"/home/timebandit/Documents/projects/catClicker2/index (copy).html",
+		"/home/timebandit/Documents/projects/catClicker2/index.html",
+		"/home/timebandit/Documents/projects/catClicker/static/js/app.js",
+		"/home/timebandit/Documents/projects/catClicker/index.html",
+		"/home/timebandit/Documents/projects/catClicker2/static/css/styles.css",
+		"/home/timebandit/Documents/projects/catClicker2/static/js/app.js",
+		"/home/timebandit/Documents/projects/blog/test.html",
+		"/home/timebandit/Documents/projects/pelicanpage/del/test.html",
+		"/home/timebandit/Documents/projects/blog/pelicanconf.py",
+		"/home/timebandit/Documents/projects/blog/publishconf.py",
+		"/home/timebandit/Documents/projects/blog/content/pages-project/github-workflow.md",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages-javascript/basics.md",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages-javascript/patterns.md",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages/Javascript.md",
+		"/home/timebandit/Documents/projects/pelicanpage/test.html",
+		"/home/timebandit/Documents/projects/catClicker/static/css/styles.css",
+		"/home/timebandit/Documents/projects/pelicanpage/static/js/app.js",
+		"/home/timebandit/Documents/projects/pelicanpage/static/css/styles.css",
+		"/home/timebandit/Documents/projects/catClicker2/README.md",
+		"/home/timebandit/Documents/learncode.academy/modularJs5-usingpubsub/static/js/app.js",
+		"/home/timebandit/Documents/learncode.academy/modularJs5-usingpubsub/index.html",
+		"/home/timebandit/Documents/learncode.academy/modularjs4-pubsub/pubsub.js",
+		"/home/timebandit/Documents/learncode.academy/modularJs5-usingpubsub/static/css/styles.css",
+		"/home/timebandit/Documents/learncode.academy/modularJs3-revealingmodulepattern/static/js/app.js",
+		"/home/timebandit/Documents/learncode.academy/modularJs3-revealingmodulepattern/index.html",
+		"/home/timebandit/Documents/learncode.academy/modularJs2-objectliteralmodule/static/js/app.js",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages/Codework.md",
+		"/home/timebandit/Documents/learncode.academy/modularJs2/static/css/styles.css",
+		"/home/timebandit/Documents/udacity courses/HTML & CSS/HTML_TEMPLATE.html",
+		"/home/timebandit/Documents/learncode.academy/modularJs2/static/js/app.js",
+		"/home/timebandit/Documents/learncode.academy/modularJs2/index.html",
+		"/home/timebandit/Documents/udacity courses/HTML & CSS/bootstrap-form-validation/script.js",
+		"/home/timebandit/Documents/udacity courses/HTML & CSS/bootstrap-form-validation/index.html",
+		"/home/timebandit/Documents/projects/catClicker/static/js/validator.js",
+		"/home/timebandit/Documents/projects/bradree/static/js/graphSub.js",
+		"/home/timebandit/Documents/udacity courses/HTML & CSS/styles/main.css",
+		"/home/timebandit/Documents/udacity courses/HTML & CSS/bootstrap_example.html",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/static/css/styles.css",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/static/js/catClickerMVC.js",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/index.html",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/catClickerPremium.html",
+		"/home/timebandit/Documents/projects/bradree/index.html",
+		"/home/timebandit/Documents/projects/bradree/data/miserables.json",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages-essays/essay-pycon2014.md",
+		"/home/timebandit/Documents/projects/bradree/static/js/g2j4d3.js",
+		"/home/timebandit/Documents/projects/bradree/data/ramzaneh.json",
+		"/home/timebandit/Documents/projects/bradree/static/js/ramz.js",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/udacity_code/ud989-cat-clicker-premium-vanilla/js/app.js",
+		"/home/timebandit/.config/sublime-text-3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/home/timebandit/.config/sublime-text-3/Packages/Sublime-JSHint/JSHint.sublime-settings",
+		"/home/timebandit/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/timebandit/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/timebandit/Documents/JS&JQuery-jon-ducket/javascript-and-jquery-feb-2015/javascript-and-jquery-feb-2015/c04/css/c04.css",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/catClickerPremiumMVO.html",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/udacity_code/ud989-retain/js/retain.js",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/udacity_code/ud989-cat-clicker-andy/app.js",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/udacity_code/ud989-retain/index.html",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/udacity_code/ud989-pizzamvo/index.html",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/udacity_code/ud989-pizzamvo/js/app.js",
+		"/home/timebandit/Documents/udacity grading/New/ngken84-frontend-nanodegree-resume-cbb9554/index.html",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/udacity_code/ud989-cat-clicker-andy/index.html",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/udacity_code/ud989-retain/css/retain.css",
+		"/home/timebandit/Documents/projects/bradree/data/fm.json",
+		"/home/timebandit/Documents/projects/bradree/temp/graphSubRamzaneh.html",
+		"/home/timebandit/Documents/projects/bradree/graphSub.html",
+		"/home/timebandit/Documents/projects/bradree/README.md",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages-javascript/codeSnippets",
+		"/home/timebandit/Documents/udacity courses/javascript design patterns/catClicker.html",
+		"/home/timebandit/Documents/projects/bradree/del.html",
+		"/home/timebandit/Documents/projects/bradree/dynamicForce.html",
+		"/home/timebandit/Documents/projects/bradree/groupPositioning.html",
+		"/home/timebandit/Documents/projects/bradree/resizableForce.html",
+		"/home/timebandit/Documents/projects/bradree/graphSubRamzaneh.html",
+		"/home/timebandit/Documents/projects/bradree/graphSubNodesCentered.html",
+		"/home/timebandit/Documents/projects/bradree/miserables.html",
+		"/home/timebandit/Documents/projects/family_tree_files/js/ramz.js",
+		"/home/timebandit/Documents/projects/family_tree_files/tc2-bounding-box.html",
+		"/home/timebandit/Documents/projects/family_tree_files/index-blank.html",
+		"/home/timebandit/Documents/projects/family_tree_files/live.html",
+		"/home/timebandit/Documents/projects/family_tree_files/ramz.html",
+		"/home/timebandit/Documents/d3js videos/LYNDA Data Visualization With D3 JS TUTORIAL-kEISO/Exercice Files/Ex_Files_DVwD3js/Exercise Files/06_05/finished/D3/script.js",
+		"/home/timebandit/Documents/projects/bradree/cool-blue.html",
+		"/home/timebandit/Documents/projects/bradree/error",
+		"/home/timebandit/Documents/projects/bradree/del.py",
+		"/home/timebandit/Documents/projects/bradree/static/tests/graphSubTests.html",
+		"/home/timebandit/Documents/projects/bradree/static/js/bradri.js",
+		"/home/timebandit/Documents/projects/bradree/static/js/graphCrawl.js",
+		"/home/timebandit/Documents/projects/bradree/graphCrawl.html",
+		"/home/timebandit/Documents/projects/family_tree_files/data/ramzaneh.json",
+		"/home/timebandit/Documents/projects/family_tree_files/js/tc1.js",
+		"/home/timebandit/Documents/projects/family_tree_files/Screenshots-ClientApp.png",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages-essays/essay-firststartupfailure.md",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages/Essays.md",
+		"/home/timebandit/Documents/projects/pelicanpage/content/pages/About.md",
+		"/home/timebandit/Documents/projects/bradree/static/tests/javaScriptTests.html",
+		"/home/timebandit/Documents/projects/fullstackbasics/lotsofmenus.py",
+		"/home/timebandit/Documents/projects/fullstackbasics/CRUD.txt",
+		"/home/timebandit/Documents/projects/fullstackbasics/dbEntriesEromShell.txt",
+		"/home/timebandit/Documents/projects/fullstackbasics/database_setup.py"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/timebandit/Documents/projects/pelicanpage"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"contai",
+			"UserId",
+			"jum",
+			"count",
+			"#badge",
+			"name",
+			"h4",
+			"h3",
+			"cute",
+			"currentCat().",
+			"emit",
+			"render",
+			"deleg",
+			"catName",
+			"cat",
+			"img",
+			"image",
+			"data",
+			"admin",
+			"form",
+			"myModal",
+			"#myModal",
+			"form",
+			"img",
+			"id=\"lis",
+			"image",
+			"badge",
+			"this.cats",
+			"cats",
+			"button",
+			"listItem",
+			"listIem",
+			"right",
+			"setCurrentCat",
+			"collapse",
+			"navbar-collapse",
+			"ico",
+			"png",
+			"image",
+			"display",
+			"image",
+			"display",
+			"dra",
+			"drag",
+			"click",
+			"on.",
+			"on.(",
+			"on.",
+			"this",
+			"resize",
+			"resiv",
+			"model.graph.nodes",
+			"model.nodeNames",
+			"view.viz",
+			"model.col",
+			"model.viz",
+			"viz",
+			"model.color",
+			"console.log",
+			"\"id\" : \"70\"",
+			"\"Qasim Mir\"",
+			"\"zahid mir\"",
+			"zahid mir",
+			"weight",
+			".name",
+			".namw",
+			".data",
+			"id",
+			"},{",
+			"},",
+			"}",
+			"4452",
+			"edgesArray",
+			"temp",
+			"tran",
+			"colo",
+			"render",
+			"console",
+			"type",
+			"model.viz",
+			"current_selection",
+			"nodeNames",
+			"controller.getCurrentCat",
+			"cat_view",
+			"list_view",
+			"catNames",
+			"current",
+			"model.catList",
+			"rect",
+			"this.vis",
+			"model.vis",
+			"local",
+			"ruler",
+			"console",
+			"linear",
+			"text",
+			"getsubnet",
+			"click",
+			"removeAllNodes",
+			"linkString",
+			"force2",
+			"init: function()",
+			"render",
+			"();",
+			"data.",
+			"graph",
+			"addLink",
+			"findNode",
+			"findNodeIndex",
+			"removeAllNodes",
+			"removeAllLinks",
+			"findNode",
+			"addLink",
+			"addNode",
+			"subNetNodes :       force.nodes(),\n        subNetLinks :       force.links(),      \n        linkStrings :       [],\n        labelAnchors:       force2.nodes(),\n        ",
+			"elementName",
+			"return",
+			"console",
+			"content",
+			"count",
+			"Things",
+			"console.log",
+			"poplinre-count",
+			"transform",
+			"name",
+			".name",
+			"name",
+			"$"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "faq.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"bradree/static/js/graphSub.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 151.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
