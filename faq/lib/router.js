@@ -1,3 +1,4 @@
+// specify the base layout to be used for templates
 Router.configure({
 	layoutTemplate: 'layout'
 });

@@ -1,5 +1,5 @@
 // The map function is placing an index property inside every
-// question object, this index will be used within the template
+// question object, and spitting out the same cursor.
 Template.questions.helpers({
 	questions: function () {
 		return Questions.find({}).map(function (question, index) {
