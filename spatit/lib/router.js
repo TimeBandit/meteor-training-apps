@@ -3,10 +3,19 @@ Router.configure({
 });
 
 Router.route('/', function() {
-    this.render('home');
-}, {
-    name: 'home'
-});
+        this.render('home', {
+            data: {
+                products: Products.find({
+                    is_featured: 1
+                })
+            }
+        });
+    },
+
+    {
+        name: 'home'
+    }
+);
 
 // data: must return a function or an object
 Router.route('/products', function() {
@@ -16,6 +25,8 @@ Router.route('/products', function() {
         }
     });
 });
+
+Router.route('/addProduct');
 
 // function () {
 // 			templateData = {
