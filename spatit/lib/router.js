@@ -1,3 +1,4 @@
+// configure the router
 Router.configure({
     layoutTemplate: 'layout'
 });
