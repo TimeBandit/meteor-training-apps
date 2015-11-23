@@ -1,5 +1,19 @@
 <template name="home">
-	{{#each products}}
-		{{name}}
-	{{/each}}
+    <h3>Featured Products</h3>
+    {{#each products}}
+	    <div class="row">
+	        <div class="col-md-2">
+	            <img class="full" src="{{image}}" alt="{{name}}">
+	        </div>
+	        <div class="col-md-10">
+	            <h4>{{name}}</h4>
+	            <p>Average Rating: RATING</p>
+	            <p>{{truncateText description 150}}</p>
+	            <a href="{{pathFor 'product'}}" class="btn btn-default">Read Reviews</a>
+	            <a href="{{pathFor " newReview "}}" class="btn btn-primary">Add Review</a>
+	        </div>
+	    </div>
+    {{else}}
+    	<p>There are no products</p>
+    {{/each}}
 </template>

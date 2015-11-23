@@ -7,7 +7,7 @@ Router.route('/', function() {
         this.render('home', {
             data: {
                 products: Products.find({
-                    is_featured: 1
+                    is_featured: "1"
                 })
             }
         });
@@ -27,11 +27,30 @@ Router.route('/products', function() {
     });
 });
 
-Router.route('/addProduct');
+Router.route('/addProduct', function() {
+    this.render('addProduct', {
+        data: {
+            categories: Categories.find()
+        }
+    });
+});
 
-// function () {
-// 			templateData = {
-// 				products: Products.find()
-// 			};
-// 			return templateData;
-// 		}
+Router.route('/categories/:slug', function() {
+    this.render('category_products', {
+        data: {
+            category_products: Products.find({category: this.params.slug})
+        }
+    })
+}, {
+    name: 'category_products'
+});
+
+// Router.route('/addProduct', {
+//     data: function() {
+//         templateData = {
+//             categories: Categories.find() 
+//         };
+
+//         return templateData;
+//     }
+// });
