@@ -38,19 +38,30 @@ Router.route('/addProduct', function() {
 Router.route('/categories/:slug', function() {
     this.render('category_products', {
         data: {
-            category_products: Products.find({category: this.params.slug})
+            category_products: Products.find({
+                category: this.params.slug
+            })
         }
     })
 }, {
     name: 'category_products'
 });
 
-// Router.route('/addProduct', {
-//     data: function() {
-//         templateData = {
-//             categories: Categories.find() 
-//         };
+// using router options
+Router.route('/new-review/:_id', {
+    data: function() {
+            return Products.findOne(
+                this.params._id
+            );
+        },
+    name: 'new.review'
+});
 
-//         return templateData;
-//     }
-// });
+Router.route('/product/:_id', {
+    data: function() {
+            return Products.findOne(
+                this.params._id
+            );
+        },
+    name: 'product.show'
+});
