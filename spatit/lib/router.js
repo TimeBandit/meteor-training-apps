@@ -35,33 +35,44 @@ Router.route('/addProduct', function() {
     });
 });
 
-Router.route('/categories/:slug', function() {
-    this.render('category_products', {
-        data: {
-            category_products: Products.find({
-                category: this.params.slug
-            })
-        }
-    })
-}, {
-    name: 'category_products'
+// Router.route('/categories/:slug', function() {
+//     this.render('CategoryShow', {
+//         data: {
+//             category_products: Products.find({
+//                 category: 'this.params.slug'
+//             })
+//         }
+//     })
+// }, {
+//     name: 'category.show'
+// });
+
+Router.route('/categories/:slug', {
+    data: function() {
+        console.log(this.params.slug);
+        return Products.find({
+            category: this.params.slug
+        });
+    },
+
+    name: 'category.show'
 });
 
 // using router options
 Router.route('/new-review/:_id', {
     data: function() {
-            return Products.findOne(
-                this.params._id
-            );
-        },
+        return Products.findOne(
+            this.params._id
+        );
+    },
     name: 'new.review'
 });
 
 Router.route('/product/:_id', {
     data: function() {
-            return Products.findOne(
-                this.params._id
-            );
-        },
+        return Products.findOne(
+            this.params._id
+        );
+    },
     name: 'product.show'
 });

@@ -1,13 +1,13 @@
-<template name="category_products">
+<template name="CategoryShow">
 	<h3>Products</h3> 
-    {{#each category_products}}
+    {{#each category}}
 	    <div class="row product-row">
 	        <div class="col-md-2">
 	            <img class="full" src="{{image}}" alt="{{name}}">
 	        </div>
 	        <div class="col-md-10">
 	            <h4>{{name}}</h4>
-	            <p>Average Rating: RATING</p>
+	            <p class="rateit" data-rateit-value="{{getAvg reviews}}" data-rateit-ispreset="true" data-rateit-readonly="true">({{getReviewsTotal reviews.length}})</p>
 	            <p>{{truncateText description 150}}</p>
 	            <a href="{{pathFor 'product.show'}}" class="btn btn-default">Read Reviews</a>
 	            <a href="{{pathFor 'new.review' }}" class="btn btn-primary">Add Review</a>
