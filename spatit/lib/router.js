@@ -3,6 +3,26 @@ Router.configure({
     layoutTemplate: 'layout'
 });
 
+// redirect logged out user from route 
+// before any route is executed
+var OnBeforeActions = {
+    loginRequired: function() {
+        if (!Meteor.userId()) {
+            FlashMessages.sendSuccess('Yooooo, you\'re not logged in');
+            Router.go('/');
+        } else {
+            // just continue
+            this.next();
+        };
+    }
+}
+
+// Specify pages this action applies to
+// pages you must be logged in to see
+Router.onBeforeAction(OnBeforeActions.loginRequired, {
+    only: ['addProduct', 'new.review']
+});
+
 Router.route('/', function() {
         this.render('home', {
             data: {
@@ -38,9 +58,10 @@ Router.route('/addProduct', function() {
 // Router.route('/categories/:slug', {
 //     data: function() {
 //         templateData = {
-//             category_products: Products.find(
-//                 this.params.slug
-//             )
+//             category_products: Products.find({
+//                 category: this.params.slug
+//                 })
+
 //         }
 //         return templateData;
 //     },

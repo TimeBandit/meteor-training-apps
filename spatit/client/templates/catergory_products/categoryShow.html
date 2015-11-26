@@ -10,7 +10,9 @@
 	            <p class="rateit" data-rateit-value="{{getAvg reviews}}" data-rateit-ispreset="true" data-rateit-readonly="true">({{getReviewsTotal reviews.length}})</p>
 	            <p>{{truncateText description 150}}</p>
 	            <a href="{{pathFor 'product.show'}}" class="btn btn-default">Read Reviews</a>
-	            <a href="{{pathFor 'new.review' }}" class="btn btn-primary">Add Review</a>
+	            {{#if currentUser}}
+	            	<a href="{{pathFor 'new.review' }}" class="btn btn-primary">Add Review</a>
+	            {{/if}}	            
 	        </div>
 	    </div>
     {{else}}
