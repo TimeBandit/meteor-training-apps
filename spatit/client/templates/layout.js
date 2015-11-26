@@ -16,23 +16,24 @@ Template.registerHelper('truncateText', function(text, length) {
 });
 
 // Get Average Rating
-Template.registerHelper('getAvg',function (reviews) {
+Template.registerHelper('getAvg', function(reviews) {
     var sum = 0;
     for (var i = 0; i < reviews.length; i++) {
         sum += parseInt(reviews[i].rating, 10);
-        return Math.round(sum);
+        //return Math.round(sum);
     };
+    return Math.round(sum/reviews.length);
 })
 
 // Get total amount of reviews
-Template.registerHelper('getReviewsTotal', function (total) {
+Template.registerHelper('getReviewsTotal', function(total) {
     if (total > 0) {
         return total;
-    } else{
+    } else {
         return 0;
     };
 });
 
-Template.registerHelper('formatDate', function (date) {
+Template.registerHelper('formatDate', function(date) {
     return moment(date).format('MM-DD-YYYY');
 })
