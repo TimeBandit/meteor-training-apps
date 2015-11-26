@@ -35,27 +35,26 @@ Router.route('/addProduct', function() {
     });
 });
 
-// Router.route('/categories/:slug', function() {
-//     this.render('CategoryShow', {
-//         data: {
-//             category_products: Products.find({
-//                 category: 'this.params.slug'
-//             })
+// Router.route('/categories/:slug', {
+//     data: function() {
+//         templateData = {
+//             category_products: Products.find(
+//                 this.params.slug
+//             )
 //         }
-//     })
-// }, {
+//         return templateData;
+//     },
 //     name: 'category.show'
 // });
 
-Router.route('/categories/:slug', {
-    data: function() {
-        console.log(this.params.slug);
-        return Products.find({
-            category: this.params.slug
-        });
-    },
-
-    name: 'category.show'
+Router.route('/categories/:slug', function() {
+    this.render('CategoryShow', {
+        data: {
+            category_products: Products.find({
+                category: this.params.slug
+            })
+        }
+    })
 });
 
 // using router options
