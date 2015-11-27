@@ -1,3 +1,4 @@
+// These are access methods defined on the sever
 Meteor.methods({
     addProduct: function(file, name, category, description, is_featured) {
         if (file) {

@@ -1,3 +1,4 @@
+// Global Helpers; available across all templates
 // truncate text
 Template.registerHelper('truncateText', function(text, length) {
     var newText;

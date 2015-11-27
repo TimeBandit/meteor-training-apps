@@ -9,6 +9,7 @@ Template.addProduct.events({
         var file = $('#productImage').get(0).files[0];
 
         // Call a Meteor method, only they can write data
+        // This is way of locking down your security once insecure is removed
         Meteor.call('addProduct', file, name, category, description, is_featured)
         
         // clear the form
