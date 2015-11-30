@@ -1,3 +1,4 @@
+// Custom validation
 Template.register.events({
     'submit .form-signup': function(event) {
         var email = trimInput(event.target.email.value);
@@ -12,6 +13,7 @@ Template.register.events({
             isNotEmpty(last_name) && isEmail(email) &&
             areValidPasswords(password, password2)) {
 
+            // Create a new User if the above validations PASS
             Accounts.createUser({
                 password: password,
                 email: email,
