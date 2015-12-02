@@ -1,3 +1,11 @@
+Template.login.helpers({
+    userEmail: function() {
+        return Meteor.user().emails[0].address;
+    }
+});
+
+// Controls one panel which contains both panels
+// Jquery used to die and show one panel or other
 Template.login.events({
     'click .register-link': function(event) {
         $('.panel-register').fadeIn();
@@ -34,10 +42,47 @@ Template.login.events({
         }
         return false;
 
+    },
+    'submit .login-form': function(event) {
+        var email = trimInput(event.target.email.value);
+        var password = trimInput(event.target.password.value);
+
+        if (isNotEmpty(email) &&
+            isNotEmpty(password)) {
+
+            Meteor.loginWithPassword({
+                email: email
+            }, password, function(err) {
+                if (err) {
+                    FlashMessages.sendError(err.reason);
+                } else {
+                    FlashMessages.sendSuccess('You are now logged in :)');
+                };
+            })
+
+            // clear form
+            event.target.email.value = "";
+            event.target.password.value = "";
+            
+            Router.go('/');
+        };
+        return false;
+    },
+    'submit .logout-form': function(event) {
+        Meteor.logout(function(err) {
+            if (err) {
+                FlashMessages.sendError('There was an error logging out, try again please');
+            } else {
+                FlashMessages.sendSuccess('You are now logged out');
+                Router.go('/');
+            };
+
+        });
+        return false;
     }
 });
 
-// Validation Rules
+// Custom Validation Rules
 
 // Trim Helper
 var trimInput = function(val) {
