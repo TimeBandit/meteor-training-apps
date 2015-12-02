@@ -1,3 +1,2 @@
 # toy-meteor-apps
-This is a repository of Meteor apps I have programmed via online tutorials.
-I have added comments to help you understand and remember what each line does.
+This is a repository of Meteor apps I have coded via online tutorials. All code is commented where neccessary.
