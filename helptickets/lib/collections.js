@@ -1,2 +1,3 @@
 // Tickets Collection
-Tickets = new Mongo.Collection('ticket');
+Tickets = new Mongo.Collection('tickets');
+Departments = new Mongo.Collection('departments');

@@ -61,7 +61,10 @@
                         <div class="form-group">
                             <label for="department">Department</label>
                             <select name="department" id="department" class="form-control">
-                                <option value="Web Hosting">Web Hosting</option>
+                                {{#each departments}}
+                                    <option value="{{name}}">{{name}}</option>
+                                {{/each}}
+                                
                             </select>
                         </div>
                         <div class="form-group">

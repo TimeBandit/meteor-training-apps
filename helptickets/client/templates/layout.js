@@ -1,6 +1,12 @@
 // create global helpers
 
-// Formet the date using Moment.js
+Template.registerHelper('isStaff', function(){
+	if (Meteor.user().profile.usertype === 'staff') {
+		return true;
+	};
+})
+
+// Format the date using Moment.js
 Template.registerHelper('formatDate', function(date){
 	return moment(date).format('MMMM Do YYYY, h:mm:ss a');
 });

@@ -29,7 +29,7 @@ Template.login.events({
                 password: password,
                 email: email,
                 profile: {
-                    usertype: 'customer'
+                    usertype: 'staff'
                 }
             }, function(err) {
                 if (err) {
