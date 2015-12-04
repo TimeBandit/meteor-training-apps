@@ -1,4 +1,4 @@
-// create global helpers
+// create global helpers.
 
 Template.registerHelper('isStaff', function(){
 	if (Meteor.user().profile.usertype === 'staff') {
