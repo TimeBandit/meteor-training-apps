@@ -2,6 +2,7 @@ Router.configure({
     layoutTemplate: 'layout'
 });
 
+// method to run before execute named route
 var OnBeforeActions = {
     isStaff: function() {
         //if logged in
@@ -30,7 +31,7 @@ Router.route('/', {
     name: 'mytickets',
     template: "mytickets",
     data: function() {
-        console.log('hello1');
+        // roturn two cursors into the template
         templateData = {
             tickets: Tickets.find({
                 customer: Meteor.userId(),
@@ -45,7 +46,6 @@ Router.route('/', {
 Router.route('/ticket/:_id', {
     template: 'ticket',
     data: function() {
-        console.log('hello2');
         var currentTicket = this.params._id;
         return Tickets.findOne({
             _id: currentTicket

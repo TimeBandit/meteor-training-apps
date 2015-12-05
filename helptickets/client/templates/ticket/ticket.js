@@ -1,3 +1,4 @@
+// add a reply to the current ticket object
 Template.ticket.events({
     'submit .add-reply': function(event) {
         var reply = event.target.reply.value;

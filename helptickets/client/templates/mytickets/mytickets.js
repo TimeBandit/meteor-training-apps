@@ -1,3 +1,4 @@
+// create a new ticket on form submission
 Template.mytickets.events({
     'submit .open-ticket-form': function(event) {
         var name = event.target.name.value;
@@ -39,13 +40,12 @@ Template.mytickets.events({
                 event.target.subject.value = "";
                 event.target.priority.value = "Medium";
                 event.target.message.value = "";
-
-
             };
         });
         return false;
     },
     'click .close-ticket': function (event) {
+        // remove a ticket on click
     	Tickets.remove({_id: this._id}, function(err){
     		if (err) {
     			console.log(err.reason);

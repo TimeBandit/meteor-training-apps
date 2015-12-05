@@ -5,7 +5,7 @@ Template.login.helpers({
 });
 
 // Controls one panel which contains both panels
-// Jquery used to die and show one panel or other
+// Jquery used to hide and show one panel or other
 Template.login.events({
     'click .register-link': function(event) {
         $('.panel-register').fadeIn();
