@@ -13,9 +13,9 @@
         {{#each plans}}
         	<tr>
                 <td>{{plan_name}}</td>
-                <td>{{days}}Days</td>
+                <td>{{days}} Days</td>
                 <td>{{price}}</td>
-                <td><a href="/admin/plans/edit{{_id}}" class="button button-primary">Edit</a><a href="" class="delete-plan button button-danger">Delete</a></td>
+                <td><a href="/admin/plans/edit/{{_id}}" class="button button-primary">Edit</a><a href="" class="delete-plan button button-danger">Delete</a></td>
             </tr>
         {{/each}}            
         </tbody>
