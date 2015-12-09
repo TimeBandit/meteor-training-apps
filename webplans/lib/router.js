@@ -1,7 +1,9 @@
+// configure the router
 Router.configure({
     layoutTemplate: 'layout'
 });
 
+// send the plans to the plans template
 Router.route('/', {
     template: 'plans',
     name: 'plans',
@@ -36,6 +38,7 @@ Router.route('/admin/plans/add', {
     name: 'addplan'
 });
 
+// send one plan item to eh edit plan template
 Router.route('/admin/plans/edit/:_id', {
     template: 'editplan',
     name: 'editplan',
@@ -47,6 +50,7 @@ Router.route('/admin/plans/edit/:_id', {
     }
 });
 
+// send the subscriber to the template
 Router.route('/admin/subscribers', {
     template: 'listsubscribers',
     name: 'listsubscribers',

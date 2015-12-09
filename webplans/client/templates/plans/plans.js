@@ -1,3 +1,4 @@
+// inserts the plan name together with the userid into the subscribers collection
 Template.plans.events({
 	'click .buy-plan': function (event) {
 		// could also be extraxt with the current

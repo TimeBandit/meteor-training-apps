@@ -1,3 +1,4 @@
+// modifies a select field in the tempalte
 Template.editplan.helpers({
     checkValue: function(val1, val2) {
         if (val1 == val2) {
@@ -6,6 +7,7 @@ Template.editplan.helpers({
     }
 });
 
+// adds a plan to into the Plans collection
 Template.addplan.events({
     'submit .add-plan-form': function(event) {
         var plan_name = event.target.plan_name.value;
@@ -38,6 +40,7 @@ Template.addplan.events({
     }
 });
 
+// Takes the submitted fields in the edit form and updates the collection
 Template.editplan.events({
     'submit .edit-plan-form': function(event) {
         var plan_name = event.target.plan_name.value;
@@ -74,8 +77,9 @@ Template.editplan.events({
     }
 });
 
+// remove a plan from the list
 Template.listplans.events({
-	'click': function () {
+	'click .delete-plan': function () {
 		Plans.remove({_id: this._id}, function(err) {
             if (err) {
                 toastr.error(err.reason, 'Oops!');
