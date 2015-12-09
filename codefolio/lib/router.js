@@ -47,3 +47,8 @@ Router.route('/admin/projects/:_id/edit', {
 	name: 'edit_project',
 	template: 'edit_project'
 });
+
+Router.route('/admin', {
+	name: 'login',
+	template: 'login'
+});
