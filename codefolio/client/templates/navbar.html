@@ -16,7 +16,9 @@
                     <li><a href="{{pathFor 'about'}}">About</a></li>
                     <li><a href="{{pathFor 'blog'}}">Blog</a></li>
                     <li><a href="{{pathFor 'contact'}}">Contact</a></li>
-                    {{#if currentUser}}
+                    {{#if currentUser}}                        
+                        <li><a href="{{pathFor 'list_projects'}}">Admin - Projects</a></li>
+                        <li><a href="{{pathFor 'list_posts'}}">Admin - Posts</a></li>
                         <li><a class="logout-user" href="">Logout</a></li>
                     {{/if}}
                     
