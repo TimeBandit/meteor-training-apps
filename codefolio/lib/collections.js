@@ -77,6 +77,6 @@ Projects.attachSchema(new SimpleSchema({
 	}
 }));
 
-// the images themselves.
+//. the images themselves.
 // need a collection for storage
 ProjectImages = new FS.Collection('ProjectImages')
