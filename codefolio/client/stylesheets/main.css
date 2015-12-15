@@ -245,3 +245,7 @@ bt {
 .edit_image {
 	width: 100px;
 }
+
+.product_image {
+	display: inline;
+}

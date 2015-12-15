@@ -4,12 +4,29 @@ Router.configure({
 
 Router.route('/', {
     name: 'home',
-    template: 'home'
+    template: 'home',
+    data: function() {
+        var templateDate = {
+            projects: Projects.find()
+        }
+        return templateDate;
+    }
 });
 
 Router.route('about');
 
-Router.route('work');
+Router.route('/work', {
+    name: 'work',
+    template: 'work',
+    data: function() {
+        // return template data when  returning
+        // a cursor
+        var templateData = {
+            projects: Projects.find()
+        }
+        return templateData
+    }
+});
 
 Router.route('contact');
 
@@ -32,6 +49,15 @@ Router.route('/blog/post/:_id', {
     data: function(){
         var currentPost = this.params._id;
         return Posts.findOne({id:currentPost});
+    }
+});
+
+Router.route('/project/:_id', {
+    name: 'project',
+    template: 'project',
+    data: function(){
+        var currentProject = this.params._id;
+        return Projects.findOne({_id:currentProject});
     }
 });
 

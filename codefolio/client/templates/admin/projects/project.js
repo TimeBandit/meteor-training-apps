@@ -17,14 +17,15 @@ Template.add_project.events({
 
         // use jQuery to grab the image
         var file = $('#projectImage').get(0).files[0];
+        console.log(file);
         if (file) {
 
-            fsFile = new FS.file(file);
+            fsFile = new FS.File(file);
             // insert the FS file into the FS collection
-            ProjectImage.insert(fileFile, function(err, result) {
+            ProjectImages.insert(fsFile, function(err, result) {
                 if (!err) {
                 	// build the path top the file
-                    var projectImage = '/cfs/file/ProjectImage/' + result._id;
+                    var projectImage = '/cfs/files/ProjectImages/' + result._id;
 
                     // Insert Project
                     Projects.insert({
@@ -35,6 +36,8 @@ Template.add_project.events({
                         project_date: project_date,
                         projectImage: projectImage
                     });
+                } else{
+                    FlashMessages.sendSuccess(err.reason);
                 }
             });
         } else {
@@ -49,8 +52,8 @@ Template.add_project.events({
         };
 
         FlashMessages.sendSuccess('Project Added');
-        Router.go('/admin/projects');
-        return false;
+        Router.go('/admin/projects');        
+        return false;        
     }
 });
 
@@ -67,12 +70,12 @@ Template.edit_project.events({
         var file = $('#projectImage').get(0).files[0];
         if (file) {
 
-            fsFile = new FS.file(file);
+            fsFile = new FS.File(file);
             // insert the FS file into the FS collection
-            ProjectImage.insert(fileFile, function(err, result) {
+            ProjectImages.insert(fsFile, function(err, result) {
                 if (!err) {
                 	// build the path top the file
-                    var projectImage = '/cfs/file/ProjectImage/' + result._id;
+                    var projectImage = '/cfs/files/ProjectImages/' + result._id;
 
                     // Update Project
                     Projects.update({
@@ -83,8 +86,8 @@ Template.edit_project.events({
                     		description: description,
                     		type: type,
                     		client: client,
-                    		project_date,
-                    		projectImage
+                    		project_date: project_date,
+                    		projectImage: projectImage
                     	}
                     });
                     
@@ -100,7 +103,7 @@ Template.edit_project.events({
                     		description: description,
                     		type: type,
                     		client: client,
-                    		project_date
+                    		project_date: project_date                                                                                                                                                                                                                    
                     	}
                     });
         };
