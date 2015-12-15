@@ -36,6 +36,19 @@ Template.layout.events({
 	}
 });
 
+// available through the whole application
 Template.registerHelper('formatDate', function(date){
     return moment(date).format('MMMM Do YYYY, h:mm:ss a')
+});
+
+Template.registerHelper('getSiteTitle', function(date){
+    return 'TimeBandit'
+});
+
+Template.registerHelper('getAdminName', function(date){
+    return 'Mo Ali';
+});
+
+Template.registerHelper('getAdminImage', function(date){
+    return '/assets/img/user.png';
 });

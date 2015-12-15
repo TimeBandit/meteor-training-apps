@@ -32,7 +32,6 @@ Projects.attachSchema(new SimpleSchema({
 	},
 	description: {
 		type: String,
-		max: 500
 	},
 	client: {
 		type: String,

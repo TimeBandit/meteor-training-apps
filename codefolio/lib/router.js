@@ -15,8 +15,25 @@ Router.route('contact');
 
 Router.route('/blog', {
     name: 'blog',
-    template: 'blog'
+    template: 'blog',
+    data: function() {
+        // return template data when  returning
+        // a cursor
+        var templateData = {
+            posts: Posts.find()
+        }
+        return templateData
+    }
 })
+
+Router.route('/blog/post/:_id', {
+    name: 'blog_post',
+    template: 'blog_post',
+    data: function(){
+        var currentPost = this.params._id;
+        return Posts.findOne({id:currentPost});
+    }
+});
 
 // all the seperate onBeforeActions' could be done with
 // one global one
