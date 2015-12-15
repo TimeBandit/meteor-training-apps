@@ -237,6 +237,11 @@ bt {
 /* glyphicon Configuration */
 
 .glyphicon {
-	font-size: 40px;
+	font-size: 10px;
 	color: #1abc9c;
+	top: 0px;
+}
+
+.edit_image {
+	width: 100px;
 }

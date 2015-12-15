@@ -42,7 +42,7 @@ Projects.attachSchema(new SimpleSchema({
 		type: String,
 		max: 100
 	},
-	projectDate: {
+	project_date: {
 		type: String,
 		max: 100,
 		optional: true
@@ -79,4 +79,6 @@ Projects.attachSchema(new SimpleSchema({
 
 // An FS.Collection provides a collection in which 
 // information about files can be stored
-ProjectImages = new FS.Collection('ProjectImages')
+ProjectImages = new FS.Collection('ProjectImages',{
+	stores: [new FS.Store.GridFS('ProjectImages')]
+});
