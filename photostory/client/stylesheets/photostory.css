@@ -1,0 +1,9 @@
+body {
+	padding-top: 20px;
+}
+
+.img {
+	padding: 2px;
+	max-width: 340px;
+	height: auto;
+}
