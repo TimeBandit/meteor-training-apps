@@ -17,6 +17,7 @@ Template.login.events({
             };
         });
 
+        // clear form
         event.target.username.value = "";
         event.target.password.value = "";
         // prevent form submission
