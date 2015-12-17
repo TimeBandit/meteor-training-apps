@@ -8,6 +8,6 @@ Template.home.helpers({
     }
 });
 
-Template.home.onRendered(function() {
-    $("#photostory").stalactite();
+Template.home.onRendered(function() {    
+    $("#photo-story").stalactite();
 });
