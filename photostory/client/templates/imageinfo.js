@@ -1,8 +1,4 @@
 Template.imageInfo.helpers({
-    test: function(_id){
-        console.log(_id);
-        return _id
-    },
     getTitle: function(imageId) {
         var res = ImageInfo.findOne({
             imageId: imageId

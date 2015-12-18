@@ -10,7 +10,7 @@ Images = new FS.Collection('Images', {
     }
 });
 
-// create db rules [effective when insecure is removed]
+// create db rules [effective when insecure is removed
 Images.allow({
 	insert: function(){return true;},
 	update: function(){return true;},

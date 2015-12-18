@@ -1,5 +1,7 @@
+// store info relating to the image
 Template.addInfo.events({
     'submit .add-image-info': function(event) {
+        // get the imageId session variable
         var imageId = Session.get('imageId');
         var title = event.target.title.value;
         var story = event.target.story.value;
