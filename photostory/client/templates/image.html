@@ -1,4 +1,7 @@
 <template name="image">
 	<!-- url created automatically in proto obj -->
     <img src="{{url}}" class="img">
+	{{#if isOwn _id}}
+		<a class="remove-image"><i class="glyphicon glyphicon-remove"></i></a>
+	{{/if}}    
 </template>
