@@ -7,19 +7,10 @@ Template.addInfo.events({
         var story = event.target.story.value;
 
         console.log(imageId, title, story);
-        ImageInfo.insert({
-            title: title,
-            story: story,
-            imageId: imageId,
-            imageUrl: '/cfs/files/Images/' + imageId,
-            userId: Meteor.userId(),
-            username: Meteor.user().profile.name,
-            createdAt: new Date()
-        });
+        Meteor.call('addImageInfo', imageId, title, story);
 
         Modal.hide('addInfo');
         FlashMessages.sendSuccess('Image Info Added');
         return false;
     }
 });
-
