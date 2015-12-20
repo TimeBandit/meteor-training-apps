@@ -11,10 +11,8 @@ Template.image.helpers({
 
 Template.image.events({
 	'click .remove-image': function (event) {
-		Images.remove(this._id);
-		
-		// get the id of the correct ImageInfo object to remove
-		ImageInfoId = ImageInfo.findOne({imageId:this._id});
-		ImageInfo.remove(ImageIndoId.imageId);
+		Meteor.call('deleteImage', this._id);
+		FlashMessages.sendSuccess('Image Removed');
+		return false;
 	}
 });
