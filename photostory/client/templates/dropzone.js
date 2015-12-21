@@ -5,6 +5,7 @@ Template.dropzone.events({
         // using the cfs api
         FS.Utility.eachFile(event, function(file) {
             var newFile = new FS.File(file);
+            // 'newfile' is inserted, result obj contains the id
             Images.insert(newFile, function(error, result){
               if (error) {
                 FlashMessages.sendError(error.reason);

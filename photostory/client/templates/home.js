@@ -1,3 +1,4 @@
+// subscribe to the published records
 Meteor.subscribe('images');
 Meteor.subscribe('imageinfo');
 

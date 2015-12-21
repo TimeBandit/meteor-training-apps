@@ -7,9 +7,12 @@ Template.addInfo.events({
         var story = event.target.story.value;
 
         console.log(imageId, title, story);
+        // calling of a meteor method definition
         Meteor.call('addImageInfo', imageId, title, story);
 
+        // hiding modal defined by modal package
         Modal.hide('addInfo');
+        
         FlashMessages.sendSuccess('Image Info Added');
         return false;
     }
