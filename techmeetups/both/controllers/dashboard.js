@@ -23,6 +23,7 @@ DashboardController.events({
         var state = event.target.state.value;
         var zipcode = event.target.zipcode.value;
         var meetupdate = event.target.meetupdate.value;
+        var id = event.target.id.value;
 
         var params = {
             title: title,
@@ -31,18 +32,22 @@ DashboardController.events({
             type: type,
             address: address,
             city: city,
-            state: state,
-            user: Meteor.userId(),
-            username: Meteor.user().username,
+            state: state,            
             zipcode: zipcode,
             meetupdate: meetupdate,
-            createdAt: new Date()
+            updatedAt: new Date()
         };
 
         // insert meetup
-        Meteor.call('addMeetup', params);
-        toastr.success('Meetup Added');
-        Router.go('/meetups');
+        Meteor.call('updateMeetup', id, params);
+        toastr.success('Meetup Updated');
+        Router.go('/dashboard');
         return false;
+    },
+    'click .remove-meetup': function (event) {
+    	console.log(event.currentTarget.id);
+    	Meteor.call('removeMeetup', event.currentTarget.id);
+    	toastr.success('Meetup Removed');
+    	return false;
     }
 });

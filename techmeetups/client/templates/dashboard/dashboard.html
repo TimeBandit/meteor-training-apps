@@ -7,7 +7,7 @@
             {{#each mymeetups}}
               <li class="list-group-item">
                   <a class="btn" data-toggle="modal" data-target="#modal{{_id}}">{{ title }}</a>
-                  <span class="label label-default">{{ city }}, {{state}}</span>
+                  <span class="label label-default">{{ city }}, {{state}}</span><a href="" id="{{_id}}" class="pull-right remove-meetup"><i class="fa fa-remove"></i></a>
               </li>
               <!-- Modal -->
               <div class="modal fade" id="modal{{_id}}" tabindex="-1" role="dialog" aria-labelledby="modal{{_id}}">
