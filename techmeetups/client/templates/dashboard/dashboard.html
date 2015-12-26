@@ -1,14 +1,80 @@
 <template name="dashboard">
-  <div class="template-dashboard">
-    <div class="page-header">
-      <h1>Dashboard</h1>
+    <div class="template-dashboard">
+        <div class="page-header">
+            <h1>My Meetups</h1>
+        </div>
+        <ul class="list-group">
+            {{#each mymeetups}}
+              <li class="list-group-item">
+                  <a class="btn" data-toggle="modal" data-target="#modal{{_id}}">{{ title }}</a>
+                  <span class="label label-default">{{ city }}, {{state}}</span>
+              </li>
+              <!-- Modal -->
+              <div class="modal fade" id="modal{{_id}}" tabindex="-1" role="dialog" aria-labelledby="modal{{_id}}">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="modal{{_id}}">Edit Meetup</h4>
+                          </div>
+                          <div class="modal-body">
+                              <form class="update-meetup-form" method="POST">
+                                  <div class="form-group">
+                                      <label for="title">Meetup Title</label>
+                                      <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="{{title}}">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="email">Contact Email</label>
+                                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="{{email}}">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="topics">Topics</label>
+                                      <input type="text" class="form-control" id="topics" name="topics" placeholder="Topics (eg. Programming, design, gadgets..." value="{{topics}}">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="type">Type</label>
+                                      <select name="type" id="type" class="form-control">
+                                          <option value="public">Public</option>
+                                          <option value="private">Private</option>
+                                          <option value="invite">Invite</option>
+                                      </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="meetupdate">Meetup Date</label>
+                                      <div class="input-group datetimepicker">
+                                          <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                          </span>
+                                          <input type="text" class="set-due-date form-control" id="meetupdate" name="meetupdate" value="{{meetupdate}}">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="address">Address</label>
+                                      <input type="text" class="form-control" id="address" name="address" placeholder="Street Address" value="{{address}}">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="city">City</label>
+                                      <input type="text" class="form-control" id="city" name="city" placeholder="City" value="{{city}}">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="state">State</label>
+                                      <input type="text" class="form-control" id="state" name="state" placeholder="State" value="{{state}}">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="zipcode">Zip Code</label>
+                                      <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="Zip Code" value="{{zipcode}}">
+                                  </div>
+                                  <input type="hidden" id="id" name="id" value="{{_id}}">
+                                  <button type="submit" class="btn btn-primary">Update Meetup</button>
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            {{else}}
+              <p>You currently have no meetups</p>
+            {{/each}}
+        </ul>
     </div>
-
-    <ul class="list-group">
-      {{#each items}}
-        <li class="list-group-item">{{name}} <span class="label label-default">{{rating}}</span></li>
-      {{/each}}
-    </ul>
-
-  </div>
 </template>
