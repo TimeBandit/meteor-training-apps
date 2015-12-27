@@ -1,3 +1,4 @@
+// defing the actipn and data for the controller
 MeetupsController = AppController.extend({
     waitOn: function() {
         return this.subscribe('meetups');
@@ -10,6 +11,7 @@ MeetupsController = AppController.extend({
     }
 });
 
+// define the events for the controller
 MeetupsController.events({
     'submit .add-meetup-form': function(event) {
         var title = event.target.title.value;

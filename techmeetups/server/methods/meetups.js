@@ -1,3 +1,4 @@
+// method definitions. methods called in controllers
 Meteor.methods({
     'addMeetup': function(params) {
         Meetups.insert(params);

@@ -1,3 +1,6 @@
+// controllers are a way of moving router logic into 
+// a different area to create cleaner code
+// see the iron router docs for more info
 DashboardController = AppController.extend({
     waitOn: function() {
         return this.subscribe('mymeetups');
