@@ -1,5 +1,5 @@
-# toy-meteor-apps
-A folder containing simple meteor apps.
+# Meteor Apps
+This folder contains sample apps coded using the Meteor JS framework.
 
 Some deployed examples:
 
