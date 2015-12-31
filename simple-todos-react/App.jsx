@@ -1,5 +1,16 @@
 // App component - represents the whole app
 App = React.createClass({
+  
+  // This mixin makes the getMeteordata method work
+  mixins: [ReactMeteorData],
+
+  // Loads items from the Taks collection and puts on this.data.task
+  getMeteorData() {
+    return {
+      tasks: Tasks.find({}).fetch()
+    }
+  },
+
   getTasks() {
     return [
       { _id: 1, text: "This is task 1" },
@@ -9,9 +20,26 @@ App = React.createClass({
   },
 
   renderTasks() {
-    return this.getTasks().map((task) => {
+    return this.data.tasks.map((task) => {
+      // return an array of HTML strings
       return <Task key={task._id} task={task} />;
     });
+  },
+
+  handleSubmit(event){
+    event.preventDefault();
+
+    // find the text field via the React ref
+    var text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
+
+    // Insert the new task
+    Tasks.insert({
+      text: text,
+      createdAt: new Date()
+    });
+
+    // clear the form
+    ReactDOM.findDOMNode(this.refs.textInput).value = "";
   },
 
   render() {
@@ -19,8 +47,10 @@ App = React.createClass({
       <div className="container">
         <header>
           <h1>Todo List</h1>
+            <form className="new-task" onSubmit={this.handleSubmit}>
+              <input type="text" ref="textInput" placeholder="Type to add new tasks" />
+            </form>   
         </header>
-
         <ul>
           {this.renderTasks()}
         </ul>
