@@ -7,7 +7,7 @@ App = React.createClass({
   // Loads items from the Taks collection and puts on this.data.task
   getMeteorData() {
     return {
-      tasks: Tasks.find({}).fetch()
+      tasks: Tasks.find({}, {sort: {createdAt: -1}}).fetch()
     }
   },
 
