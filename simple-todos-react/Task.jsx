@@ -27,7 +27,6 @@ Task = React.createClass({
         <button className="delete" onClick={this.deleteThisTask}>
           &times;
         </button>
-
         <input
           type="checkbox"
           readOnly={true}

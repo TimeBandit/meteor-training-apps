@@ -20,10 +20,12 @@ App = React.createClass({
   },
 
   renderTasks() {
-    return this.data.tasks.map((task) => {
-      // return an array of HTML strings
+    var res = this.data.tasks.map((task) => {
+      // return an array of react elements
       return <Task key={task._id} task={task} />;
     });
+    console.log(res);
+    return res;
   },
 
   handleSubmit(event){
