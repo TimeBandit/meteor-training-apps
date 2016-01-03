@@ -4,10 +4,24 @@ App = React.createClass({
   // This mixin makes the getMeteordata method work
   mixins: [ReactMeteorData],
 
+  getInitialState() {
+    return {
+      hideCompleted: false
+    }
+  },
+
   // Loads items from the Taks collection and puts on this.data.task
   getMeteorData() {
+
+    let query = {};
+
+    if (this.state.hideCompleted) {
+      // if hideCompleted is checked, filter tasks
+      query = {checked: {$ne: true}};
+    };
+
     return {
-      tasks: Tasks.find({}, {sort: {createdAt: -1}}).fetch()
+      tasks: Tasks.find(query, {sort: {createdAt: -1}}).fetch()
     }
   },
 
@@ -24,7 +38,7 @@ App = React.createClass({
       // return an array of react elements
       return <Task key={task._id} task={task} />;
     });
-    console.log(res);
+    // console.log(res);
     return res;
   },
 
@@ -44,11 +58,25 @@ App = React.createClass({
     ReactDOM.findDOMNode(this.refs.textInput).value = "";
   },
 
+  toggleHideCompleted() {
+    this.setState({
+      hideCompleted: !this.state.hideCompleted
+    });
+  },
+
   render() {
     return (
       <div className="container">
         <header>
           <h1>Todo List</h1>
+            <label className="hide-completed">
+              <input
+                type="checkbox"
+                readOnly={true}
+                checked={this.state.hideCompleted}
+                onClick={this.toggleHideCompleted} />
+              Hide Completed Tasks
+            </label>
             <form className="new-task" onSubmit={this.handleSubmit}>
               <input type="text" ref="textInput" placeholder="Type to add new tasks" />
             </form>   
