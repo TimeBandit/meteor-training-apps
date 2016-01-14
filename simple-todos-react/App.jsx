@@ -10,9 +10,13 @@ App = React.createClass({
     }
   },
 
-  // Loads items from the Taks collection and puts on this.data.task
+  // Loads items from the Tasks collection and puts on this.data.task
   getMeteorData() {
 
+    // 'let' declares a block scope variable
+    // the placeholder for the query object
+    // with this pattern state can control what data
+    // is fetched
     let query = {};
 
     if (this.state.hideCompleted) {
@@ -20,6 +24,7 @@ App = React.createClass({
       query = {checked: {$ne: true}};
     };
 
+    // access the data via this.data
     return {
       tasks: Tasks.find(query, {sort: {createdAt: -1}}).fetch(),
       incompleteCount: Tasks.find({checked: {$ne: true}}).count()
@@ -44,16 +49,14 @@ App = React.createClass({
   },
 
   handleSubmit(event){
+    // prevent the form being submitted
     event.preventDefault();
 
     // find the text field via the React ref
     var text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
 
     // Insert the new task
-    Tasks.insert({
-      text: text,
-      createdAt: new Date()
-    });
+    Method.call("addTask", text);
 
     // clear the form
     ReactDOM.findDOMNode(this.refs.textInput).value = "";
@@ -69,7 +72,7 @@ App = React.createClass({
     return (
       <div className="container">
         <header>
-          <ReactAccounts.LoginForm/>
+          {/* <ReactAccounts.LoginForm/> */}
           <h1>Todo List ({this.data.incompleteCount})</h1>
             <label className="hide-completed">
               <input
