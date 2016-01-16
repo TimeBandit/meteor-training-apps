@@ -2,13 +2,22 @@
 Tasks = new Mongo.Collection("tasks");
 
 if (Meteor.isClient) {
-  // This code is executed on the client only
-  Meteor.startup(function () {
+
+	Meteor.subscribe("tasks");
+	
+	// This code is executed on the client only
+  	Meteor.startup(function () {
     // Use Meteor.startup to render the component after the page is ready
     // render the component called APP on startup
     ReactDOM.render(<App />, document.getElementById("render-target"));    
   });
 }
+
+if (Meteor.isServer) {
+	Meteor.publish("tasks", function () {
+    return Tasks.find();
+  });
+};
 
 Meteor.methods({
 	addTask(text) {
