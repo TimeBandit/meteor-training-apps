@@ -1,0 +1,34 @@
+.headerwrap {
+	background-color: 'transparent';
+	background-image: url('images/spatula.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.buy-me-button {
+	position: relative;
+	top: 75%;
+	opacity: 1;
+	font-family: sans-serif;
+}
+
+.quotes {
+	height: 100%;
+	border: 3px red solid;
+}
+
+.quote-top, .quote-bottom {
+	font-family: sans-serif;
+}
+
+.quote-top::before, .quote-bottom::before{
+	content: '"...'
+}
+
+.quote-top::after, .quote-bottom::after{
+	content: '..."'
+}
