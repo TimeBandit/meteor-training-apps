@@ -15,43 +15,53 @@ Home = React.createClass({
         };
 
         return (
-        	<div className="headerwrap">
-	            <div className="container">
-					<div className="row">
-						<div className="col-md-2 col-md-offset-2 quotes">
-							<div className="row">
-								<div className="col-md-12">
-									<span className="quote-top">tired of sending cards</span>
+        	<span>
+        		<div className="headerwrap">
+		            <div className="container">
+						<div className="row">
+							<div className="col-md-2 col-md-offset-2 quotes">
+								<div className="row">
+									<div className="col-md-12">
+										<span className="quote-top">tired of sending cards</span>
+									</div>
+								</div>
+								<div className="row">
+									<div className="col-md-12">
+										<span className="quote-bottom">send something unusual</span>
+									</div>
 								</div>
 							</div>
-							<div className="row">
-								<div className="col-md-12">
-									<span className="quote-bottom">send something unusual</span>
+							<div className="col-md-4">
+								<div className="row">
+									<div className="col-md-12 text-center">
+										<a href="#" className="btn btn-default btn-lg buy-me-button">BUY ME £7</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div className="col-md-4">
-							<div className="row">
-								<div className="col-md-12 text-center">
-									<a href="#" className="btn btn-default btn-lg buy-me-button">BUY ME £7</a>
+							<div className="col-md-2 quotes">
+								<div className="row">
+									<div className="col-md-12">
+										<span className="quote-top">surprise someone</span>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div className="col-md-2 quotes">
-							<div className="row">
-								<div className="col-md-12">
-									<span className="quote-top">surprise someone</span>
-								</div>
-							</div>
-							<div className="row">
-								<div className="col-md-12">
-									<span className="quote-bottom">100% anonymous!</span>
+								<div className="row">
+									<div className="col-md-12">
+										<span className="quote-bottom">100% anonymous!</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<div className="twitterwrap">
+					<div className="container">
+						<div className="row">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sit et veritatis laborum nisi facilis labore optio, aut corporis dolor, dolores distinctio soluta nemo autem vel ullam iusto expedita accusantium!
+							</p>
+						</div>
+					</div>
+				</div>
+        	</span>
             );
     }
 
