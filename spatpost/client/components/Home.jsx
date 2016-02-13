@@ -17,41 +17,17 @@ Home = React.createClass({
         return (
         	<span>
         		<div className="headerwrap">
-		            <div className="container">
-						<div className="row">
-							<div className="col-md-2 col-md-offset-2 quotes">
-								<div className="row">
-									<div className="col-md-12">
-										<span className="quote-top">tired of sending cards</span>
-									</div>
-								</div>
-								<div className="row">
-									<div className="col-md-12">
-										<span className="quote-bottom">send something unusual</span>
-									</div>
-								</div>
-							</div>
-							<div className="col-md-4">
-								<div className="row">
-									<div className="col-md-12 text-center">
-										<a href="#" className="btn btn-default btn-lg buy-me-button">BUY ME £7</a>
-									</div>
-								</div>
-							</div>
-							<div className="col-md-2 quotes">
-								<div className="row">
-									<div className="col-md-12">
-										<span className="quote-top">surprise someone</span>
-									</div>
-								</div>
-								<div className="row">
-									<div className="col-md-12">
-										<span className="quote-bottom">100% anonymous!</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+        			<div className="container">
+        				<div className="left">
+        					<p className="quotes top-left" id="">tired of sending cards</p>
+        					<p className="quotes" id="bottom-left">send something unusual</p>  
+        				</div>
+        				<div className="right">
+        					<p className="quotes" id="top-right">surprise someone</p>
+        					<p className="quotes" id="bottom-right">100% anonymous!</p>
+        				</div>
+        				<div id="btn" className="btn btn-default">BUY NOW £7</div>
+        			</div>
 				</div>
 				<div className="twitterwrap">
 					<div className="container">
