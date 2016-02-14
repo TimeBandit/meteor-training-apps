@@ -11,7 +11,7 @@ Home = React.createClass({
         };
 
         var centre = {
-            paddingLeft: '30px'
+            paddingLeft: '30px';
         };
 
         return (
