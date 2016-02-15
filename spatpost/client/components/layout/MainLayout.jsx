@@ -7,6 +7,14 @@ MainLayout = React.createClass({
 			$('#theMenu').toggleClass('menu-open');
 			console.log('toggle clicked');
 		});
+
+		//replace IMG inside carousels with a background image
+			  $('#carousel-example-generic .item img').each(function() {
+			  	var imgSrc = $(this).attr('src');
+			  	console.log(imgSrc);
+			    $(this).parent().css({'background-image': 'url('+imgSrc+')'});
+			    $(this).remove();
+			  });
 	},
 	
 	render: function() {

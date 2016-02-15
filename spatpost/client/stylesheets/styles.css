@@ -1,68 +1,224 @@
-.headerwrap {
-    background: url(images/spatula.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
+.bg-shop {
+	background-color: #f7c723;
 }
 
-.left,
-.right {
-    float: left;
-    width: 50%;
-    height: 90vh;
-    border: 1px solid red;
-    position: relative;
+.m-center {
+	display: table;
+	width: 100%;
 }
 
-/*.btn {
-    color: #ffffff;
-    background-color: transparent;
-    border-color: #ffffff;
+.text-center {
+	text-align: center;
 }
 
-.btn:hover {
-    color: #2f2f2f;
-    background-color: #ffffff;
-    border-color: #2f2f2f;
-}*/
+section {
+	background-color:#FFF;
+	position: relative;
+}
+
+.m-center .center-box {
+	display: table-cell;
+	vertical-align: middle;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+	z-index: 60;
+}
+
+.m-center>div>div {
+	position:relative
+}
+
+#hero {
+	height:550px
+}
+.hero-unit {
+	text-align:center;
+	padding:0;
+	margin:0;
+	background-color:transparent
+}
+.hero-unit h1 {
+	font-size:70px;
+	font-weight:200;
+	margin-top:70px
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 200px;
+}
 
 p {
-    color: white;
-    font-family: sans-serif;
-    font-size: 16pt;
-    text-align: center;
+	border:0;
+	font:inherit;
+	line-height:24px;
+	margin-bottom:15px
 }
 
-.top-left {
-    position: absolute;
-    top: 20%;
-    /*right: 40%;*/
+.btn {
+	font-family:inherit;
+	font-size:14px;
+	cursor:pointer;
+	padding:0 35px;
+	line-height:46px;
+	display:inline-block;
+	margin:0 10px 15px 0;
+	text-decoration:none;
+	outline:0!important;
+	position:relative;
+	background:#F7C723;
+	color:#202020;
+	border-radius:4px;
+	font-weight:600;
+	letter-spacing:1px;
+	-webkit-box-shadow:0 4px 0 #ECB709;
+	-moz-box-shadow:0 4px 0 #ECB709;
+	box-shadow:0 4px 0 #ECB709
 }
 
-#top-right {
-    position: absolute;
-    top: 40%;
-    /*left: 40%;*/
+.btn>b {
+	font-size:26px;
+	line-height:48px;
+	vertical-align:bottom;
+	padding:0 10px 0 0
 }
 
-#bottom-left {
-    position: absolute;
-    top: 60%;
-    /*right: 40%;*/
+.btn.white {
+	background:#FFF;
+	color:#202020;
+	text-decoration:none;
+	-webkit-box-shadow:0 4px 0 #E0E0E0;
+	-moz-box-shadow:0 4px 0 #E0E0E0;
+	box-shadow:0 4px 0 #E0E0E0
 }
 
-#bottom-right {
-    position: absolute;
-    top: 80%;
-    /*left: 40%;*/
+.btn.white:focus,.btn.white:hover {
+	color:#202020;
+	top:4px;
+	text-decoration:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none
 }
 
-.quotes::before {
-    content: '"...'
+.btn.dark {
+    background: #202020;
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 0 #000;
+    -moz-box-shadow: 0 4px 0 #000;
+    box-shadow: 0 4px 0 #000
 }
 
-.quotes::after {
-    content: '..."'
+.btn.dark:focus,
+.btn.dark:hover {
+    color: #fff;
+    top: 4px;
+    text-decoration: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.img-hero {
+	background-image: url(http://placekitten.com/800/406);
+	background-repeat:no-repeat;
+	background-position:center top!important;
+	text-align:center;
+	padding-top:100px;
+	height:400px;
+}
+
+.hero-start-link,.hero-start-link:focus {
+	position:absolute;
+	left:50%;
+	bottom:0;
+	margin-left:-19px;
+	margin-bottom:15px!important;
+	display:block;
+	width:40px;
+	height:40px;
+	border:2px solid #202020;
+	border-radius:50%;
+	line-height:36px;
+	text-align:center;
+	font-size:28px;
+	color:#FFF;
+	background-color:#202020
+}
+.hero-start-link:hover {
+	color:#F7C723;
+	text-decoration:none
+}
+
+.padding-top-bottom {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.header {
+    text-align: center
+}
+
+.header h2 {
+    font-size: 38px;
+    font-weight: 400;
+    display: block;
+    margin-top: 0;
+    text-transform: uppercase
+}
+
+.header p {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 60px
+}
+
+.slider, .item {
+    background-color: #95a5a6;
+    height: 500px;
+    padding: 0
+}
+
+.item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+	width: 100%;
+}
+
+.half-box-right {
+	max-width: 100%;
+}
+
+.center-vertical {
+    display: table;
+    height: inherit
+}
+
+.center-vertical .center-vertical-box {
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: none;
+    z-index: 60;
+    height: inherit
+}
+
+@media (max-width:767px) {
+	.img-hero {
+		margin-top:30px;
+	}
 }
