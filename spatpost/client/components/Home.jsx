@@ -10,7 +10,7 @@ Home = React.createClass({
         					<div className="row">
         						<div className="col-sm-12">
         							<div className="hero-unit">
-        								<h1 className="title">Post A Spatula</h1>
+        								<h1 className="title">Oost A Apatula</h1>
         								<h3>Send Something Different</h3>
         								<p>100% Fun, 100% Anonymous</p>
         								<br/>
@@ -31,7 +31,7 @@ Home = React.createClass({
         			<div className="container">
         				<div className="row header">
         					<div className="col-md-12">
-        						<h2>About Send A Spatula</h2>
+        						<h2>About Oost A Apatula</h2>
         						<p>What is this about?</p>
         					</div>
         				</div>
@@ -110,6 +110,50 @@ Home = React.createClass({
         				</div>
         			</div>
         		</section>
+        		<section id="contact" className="padding-top-bottom">
+        			<div className="container">
+		                <div className="row header">
+		                    <div className="col-md-12">
+		                        <h2>Contact me</h2>
+		                        <p>For any questions fill in the form below &amp; we'll get back to you ASAP!</p>
+		                    </div>
+		                </div>
+		                <div className="row">
+		                    <div className="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 contact-info">
+		                        <form id="contact-form" action="sendemail.php" className="myform" method="post" novalidate="">
+		                            <div className="row clearfix">
+		                                <div className="col-xs-12 col-sm-6 col-md-6">
+		                                    <div className="form-group">
+		                                        <label className="control-label">Name</label>
+		                                        <div className="controls">
+		                                            <input name="contactName" placeholder="Your name" className="form-control input-lg requiredField" data-error-empty="Enter name" type="text" />
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                                <div className="col-xs-12 col-sm-6 col-md-6">
+		                                    <div className="form-group">
+		                                        <label className="control-label" for="contact-mail">Email</label>
+		                                        <div className=" controls">
+		                                            <input name="email" placeholder="Your email" className="form-control input-lg requiredField" data-error-invalid="Invalid email address" data-error-empty="Enter email" type="email" />
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div className="form-group">
+		                                <label className="control-label" for="contact-message">Message</label>
+		                                <div className="controls">
+		                                    <textarea name="comments" placeholder="Your message" className="form-control input-lg requiredField" rows="5" data-error-empty="Enter message"></textarea>
+		                                </div>
+		                            </div>
+		                            <p>
+		                                <button name="submit" type="submit" className="btn btn-store btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Email Sent">Send Message</button>
+		                            </p>
+		                            <input name="submitted" id="submitted3" value="true" type="hidden"/>
+		                        </form>
+		                    </div>
+		                </div>
+		            </div>
+        		</section>        
         	</div>
             );
     }
