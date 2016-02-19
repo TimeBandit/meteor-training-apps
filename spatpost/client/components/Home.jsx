@@ -101,7 +101,7 @@ Home = React.createClass({
         										<li>five</li>
         									</ul>
         									<a href="#" className="btn dark">
-        										<b>£7</b> BUY NOW.
+        										<b>£7</b> BUY NOW..
         									</a>
         								</div>
         							</div>
