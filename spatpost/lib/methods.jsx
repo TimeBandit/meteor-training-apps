@@ -1,6 +1,6 @@
 Meteor.methods({
   'chargeCard': function(stripeToken) {
-    var Stripe = StripeAPI('SECRET_KEY');
+    var Stripe = StripeAPI("sk_test_FU37KPHZzIrBlrL3ThtRaBBn");
 
     Stripe.charges.create({
       amount: 1000,
