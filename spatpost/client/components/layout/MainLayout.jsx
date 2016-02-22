@@ -1,9 +1,5 @@
 MainLayout = React.createClass({
 
-	componentWillMount: function() {
-		console.log('gosh this takes ages');
-	},
-
 	componentDidMount: function() {
 		// Menu settings
 		$('#menuToggle, .menu-close').on('click', function(){

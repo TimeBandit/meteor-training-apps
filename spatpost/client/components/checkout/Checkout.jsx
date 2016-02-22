@@ -1,5 +1,11 @@
 Checkout = React.createClass({
 
+	// getInitialState: function() {
+	// 	return {
+	// 		currentStep: 
+	// 	};
+	// },
+
 	render: function() {
 		return (
 			<div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
