@@ -14,10 +14,11 @@ Home = React.createClass({
         								<h3>Send Something Different</h3>
         								<p>100% Fun, 100% Anonymous</p>
         								<br/>
-        								<a href="" className="btn white">
+        								<a href="" className="btn white" data-toggle="modal" data-target="#myModal">
         									<b>£7</b> BUY NOW
-        								</a>
+        								</a>                                    
         							</div>
+                                    <Checkout />
         						</div>
         						<div className="col-sm-12 img-hero"></div>
         					</div>
@@ -120,7 +121,7 @@ Home = React.createClass({
 		                </div>
 		                <div className="row">
 		                    <div className="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 contact-info">
-		                        <form id="contact-form" action="sendemail.php" className="myform" method="post" novalidate="">
+		                        <form id="contact-form" action="sendemail.php" className="myform" method="post" noValidate="">
 		                            <div className="row clearfix">
 		                                <div className="col-xs-12 col-sm-6 col-md-6">
 		                                    <div className="form-group">
@@ -132,7 +133,7 @@ Home = React.createClass({
 		                                </div>
 		                                <div className="col-xs-12 col-sm-6 col-md-6">
 		                                    <div className="form-group">
-		                                        <label className="control-label" for="contact-mail">Email</label>
+		                                        <label className="control-label" htmlFor="contact-mail">Email</label>
 		                                        <div className=" controls">
 		                                            <input name="email" placeholder="Your email" className="form-control input-lg requiredField" data-error-invalid="Invalid email address" data-error-empty="Enter email" type="email" />
 		                                        </div>
@@ -140,7 +141,7 @@ Home = React.createClass({
 		                                </div>
 		                            </div>
 		                            <div className="form-group">
-		                                <label className="control-label" for="contact-message">Message</label>
+		                                <label className="control-label" htmlFor="contact-message">Message</label>
 		                                <div className="controls">
 		                                    <textarea name="comments" placeholder="Your message" className="form-control input-lg requiredField" rows="5" data-error-empty="Enter message"></textarea>
 		                                </div>

@@ -106,7 +106,8 @@ p {
 	box-shadow:0 4px 0 #E0E0E0
 }
 
-.btn.white:focus,.btn.white:hover {
+/*.btn.white:focus,*/
+.btn.white:hover {
 	color:#202020;
 	top:4px;
 	text-decoration:none;
@@ -134,7 +135,8 @@ p {
     box-shadow: none
 }
 
-.btn:active, .btn:focus, .btn:hover {
+/*.btn:active, .btn:focus, */
+.btn:hover {
 	color: #202020;
 	top: 4px;
 	text-decoration: none;
