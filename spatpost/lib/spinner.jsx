@@ -1,11 +1,13 @@
 if (Meteor.isServer) {
-	Inject.rawHead("loader", Assets.getText('spinners/spinner1.html'));
+	// Inject the spinner HTML into the head
+	Inject.rawBody("loader", Assets.getText('spinner.html'));
 }
 
 if (Meteor.isClient) {
 	Meteor.startup(function() {
+		// remove the spinner from the DOM after a delay
 		setTimeout(function() {
-			$(".spinbox-").fadeOut(500, function() { $(this).remove(); });
-		}, 500);
+			$(".spinner").fadeOut(50, function() { $(this).remove(); });
+		}, 5000);
 	});
 }
