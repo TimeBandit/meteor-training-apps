@@ -2,23 +2,25 @@
 People = new Mongo.Collection('people');
 
 if (Meteor.isClient) {
+    // run when client DOM is ready
     Meteor.startup(function() {
+        // subscribe to a collection
         Meteor.subscribe('people', function() {
+            // code to run when subscription is ready
             $(".spinner").fadeOut(1000, function() {
-                console.log('im in');
+                // remove the spinner after a fadeout
                 $(this).remove();
             });
         });
     });
-
-    console.log('Go Meteor');
 }
 
 if (Meteor.isServer) {
-    // Inject the spinner HTML into the head
+    // inject the spinner HTML into the head
     Inject.rawBody("loader", Assets.getText('spinner.html'));
 
     Meteor.publish('people', function() {
+        // simulate a slow server
         Meteor._sleepForMs(2000);
         return People.find();
     });
