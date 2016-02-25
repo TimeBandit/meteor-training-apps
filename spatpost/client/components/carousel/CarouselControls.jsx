@@ -2,15 +2,15 @@ CarouselControls = React.createClass({
 
 	render: function() {
 		return (
-			{/* Controls */}
 			<span>
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    	<span class="sr-only">Previous</span>
+				<a className="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    	<span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    	<span className="sr-only">Previous</span>
 			  	</a>
-			  	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    	<span class="sr-only">Next</span>
+			  	<a className="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    	<span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    	<span className="sr-only">Next</span>
 			  	</a>
 			</span>
-		});
+		)
+	}})

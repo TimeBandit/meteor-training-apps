@@ -1,6 +1,6 @@
 Checkout = React.createClass({
-
-	getSlides() {
+// <Carousel slides={this.getSlides()} />
+	getSlides: function(){
 		return [
 			<div>i</div>,
 			<div>am</div>,
@@ -19,7 +19,7 @@ Checkout = React.createClass({
 			        	<h4 className="modal-title" id="myModalLabel">Almost There</h4>
 			      	</div>
 			      	<div className="modal-body">
-			      		<Carousel slides={getSlides} />
+			      		xxx
 			      	</div>
 			      	<div className="modal-footer">
 			      		<button type="button" className="btn btn-default" data-dismiss="modal">Cancel</button>
