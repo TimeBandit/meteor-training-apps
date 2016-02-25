@@ -5,8 +5,8 @@ Carousel = React.createClass({
 	render: function() {
 		return (
 			<div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
-				<CarouselIndicators numSlides={_.size(this.props.slides)}/>
-				<CarouselSlides slides={this.props.slides}/>
+				<CarouselIndicators numSlides={this.props.slides.length}/>
+				<CarouselSlides slides={this.props.slides} />
 				<CarouselControls />
 			</div>
 		);
