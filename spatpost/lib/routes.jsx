@@ -21,6 +21,13 @@ FlowRouter.route('/contact', {
 	}
 })
 
+FlowRouter.route('/test', {
+	name: 'Login',
+	action(params) {
+		renderMainLayout(<Test />);
+	}
+})
+
 function renderMainLayout(component){
 	ReactLayout.render(MainLayout, {
 		content: component,

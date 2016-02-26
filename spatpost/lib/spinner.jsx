@@ -9,5 +9,8 @@ if (Meteor.isClient) {
 		setTimeout(function() {
 			$(".spinner").fadeOut(50, function() { $(this).remove(); });
 		}, 5000);
+
+		Stripe.setPublishableKey('pk_test_6A3exU61VDDFQfeXGAntCPyn');
+
 	});
 }
