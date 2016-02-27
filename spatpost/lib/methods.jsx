@@ -1,6 +1,7 @@
-Meteor.methods({
+if (Meteor.isServer){
+  Meteor.methods({
   'chargeCard': function(stripeToken) {
-    var Stripe = StripeAPI("sk_test_FU37KPHZzIrBlrL3ThtRaBBn");
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
 
     Stripe.charges.create({
       amount: 1000,
@@ -11,3 +12,4 @@ Meteor.methods({
     });
   }
 });
+}

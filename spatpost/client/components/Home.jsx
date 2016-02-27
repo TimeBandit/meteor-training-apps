@@ -16,20 +16,7 @@ Home = React.createClass({
         								<br/>
         								<a href="" className="btn white" data-toggle="modal" data-target="#myModal">
         									<b>£7</b> BUY NOW
-        								</a>
-                                        <form action="/charge" method="POST">
-                                          <script
-                                            src="https://checkout.stripe.com/checkout.js" className="stripe-button"
-                                            data-key="pk_test_1WafVdHV0cXKjQ2YM0hOJQZ1"
-                                            data-image="/images/svg-loaders/audio.svg"
-                                            data-name="Demo Site"
-                                            data-description="2 widgets"
-                                            data-zip-code="true"
-                                            data-currency="gbp"
-                                            data-amount="2000"
-                                            data-locale="auto">
-                                          </script>
-                                        </form>
+        								</a>                                        
         							</div>
                                     <Checkout />
         						</div>

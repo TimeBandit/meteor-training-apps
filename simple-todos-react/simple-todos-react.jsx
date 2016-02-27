@@ -1,6 +1,7 @@
-// Define a collection to hold our tasks
+// Define collection to hold our tasks
 Tasks = new Mongo.Collection("tasks");
 
+// only on client
 if (Meteor.isClient) {
 
 	Meteor.subscribe("tasks");
@@ -13,12 +14,14 @@ if (Meteor.isClient) {
   });
 }
 
+// only on server
 if (Meteor.isServer) {
 	Meteor.publish("tasks", function () {
     return Tasks.find();
   });
 };
 
+// on both client and server
 Meteor.methods({
 	addTask(text) {
 		Tasks.insert({
