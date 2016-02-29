@@ -16,6 +16,18 @@ Test = React.createClass({
           });
 	},
 
+    getTweets: function(){
+        var args = {
+            count: 3,
+            user_id: 'ImranNazirMir',
+            screen_name: 'ImranNazirMir'
+        }
+        
+        T.get('statuses/user_timeline', args,  function (err, data, response) {
+            console.log(data)
+        })
+    },
+
 	render: function() {
 		return (
 			<div>
@@ -24,6 +36,7 @@ Test = React.createClass({
                     <input type="text" name="test" />
                     <a href="#" className="btn btn-default" onClick={this.handlePayment}>BUY NOW</a>
                 </form>
+                <button onClick={this.getTweets}>Get Tweets</button>
 			</div>
 			
 		);
