@@ -1,5 +1,11 @@
 Test = React.createClass({
-	handlePayment: function(e){
+    getInitialState: function() {
+        return {
+            data: [] 
+        };
+    },
+
+    handlePayment: function(e){
 		e.preventDefault();
 		console.log(Meteor.settings);
 		StripeCheckout.open({
@@ -16,30 +22,52 @@ Test = React.createClass({
           });
 	},
 
-    getTweets: function(){
-        var args = {
-            count: 3,
-            user_id: 'ImranNazirMir',
-            screen_name: 'ImranNazirMir'
-        }
-        
-        T.get('statuses/user_timeline', args,  function (err, data, response) {
-            console.log(data)
-        })
+    getTweets: function(){        
+        Meteor.call('fetchTweets', function(error, result){
+            var res = [];
+            
+            // cycle through the results and build react elements
+            _.each(result, function(value, key, list){
+                var {created_at, text, ...other} = value;
+                
+                if (value.entities.media != undefined) {
+                    // no image
+                    let node = (
+                        <div>
+                            <p>{created_at}</p>
+                            <p>{text}</p>
+                        </div>                        
+                    );
+                    console.log(node);
+                    res.push(node);                  
+                } else {
+                    // has image
+                    let node = (
+                        <div>
+                            <img src={value.entities.media[0].media_url} alt=""/>
+                            <p>{created_at}</p>
+                            <p>{text}</p>
+                        </div>                        
+                    );
+                    res.push(node);                  
+                }
+            });
+            console.log(res);
+            return res;              
+        });        
     },
 
 	render: function() {
-		return (
+
+        return (
 			<div>
 				<form action="/charge" method="POST">
                     <label htmlFor="test">Test Input</label>
                     <input type="text" name="test" />
                     <a href="#" className="btn btn-default" onClick={this.handlePayment}>BUY NOW</a>
                 </form>
-                <button onClick={this.getTweets}>Get Tweets</button>
-			</div>
-			
+                <div className="alltweets">{this.getTweets()}</div>
+			</div>			
 		);
 	}
-
 });
