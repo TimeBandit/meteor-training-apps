@@ -1,7 +1,16 @@
 Test = React.createClass({
     getInitialState: function() {
+        var self = this;
+        
+        Meteor.call('fetchTweets', function(error, result){
+            console.info('callback returning');
+            self.setState({
+                 tweets: result
+             });
+        });
+        
         return {
-            data: [] 
+            tweets: [] 
         };
     },
 
@@ -22,43 +31,46 @@ Test = React.createClass({
           });
 	},
 
-    getTweets: function(){        
-        Meteor.call('fetchTweets', function(error, result){
-            var res = [];
-            
-            // cycle through the results and build react elements
-            _.each(result, function(value, key, list){
+    renderTweets: function(){
+        var res = [],
+            tweets = this.state.tweets;
+            console.info('inside renderTweets');
+            console.info(tweets); 
+
+        _.each(tweets, function(value, key, list){
                 var {created_at, text, ...other} = value;
                 
+                let node = null;
+
                 if (value.entities.media != undefined) {
-                    // no image
-                    let node = (
-                        <div>
-                            <p>{created_at}</p>
-                            <p>{text}</p>
-                        </div>                        
-                    );
-                    console.log(node);
-                    res.push(node);                  
-                } else {
                     // has image
-                    let node = (
-                        <div>
+                    console.info('has image');
+                    // console.log(value.entities.media[0].media_url);
+                    node = (
+                        <div key={key}>
                             <img src={value.entities.media[0].media_url} alt=""/>
+                            <strong>{text}</strong>
                             <p>{created_at}</p>
-                            <p>{text}</p>
                         </div>                        
                     );
-                    res.push(node);                  
+                    
+                } else {
+                    // no image
+                    console.info('no image');
+                    node = (
+                        <div key={key}>
+                            <strong>{text}</strong>
+                            <p>{created_at}</p>
+                        </div>                        
+                    );                                      
                 }
+                // console.info(node);
+                res.push(node);
             });
-            console.log(res);
-            return res;              
-        });        
+        return res;      
     },
 
 	render: function() {
-
         return (
 			<div>
 				<form action="/charge" method="POST">
@@ -66,7 +78,7 @@ Test = React.createClass({
                     <input type="text" name="test" />
                     <a href="#" className="btn btn-default" onClick={this.handlePayment}>BUY NOW</a>
                 </form>
-                <div className="alltweets">{this.getTweets()}</div>
+                <div className="alltweets">{this.renderTweets()}</div>
 			</div>			
 		);
 	}
