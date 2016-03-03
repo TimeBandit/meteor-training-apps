@@ -8,8 +8,8 @@ if (Meteor.isServer){
 
   var args = {
     count: 3,
-    user_id: 'BOINGBOING',
-    screen_name: 'BOINGBOING'
+    user_id: 'MagnumPhotos',
+    screen_name: 'MagnumPhotos'
   };
 
   Meteor.methods({
