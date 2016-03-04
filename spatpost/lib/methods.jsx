@@ -7,7 +7,7 @@ if (Meteor.isServer){
   });
 
   var args = {
-    count: 3,
+    count: 20,
     user_id: 'MagnumPhotos',
     screen_name: 'MagnumPhotos'
   };
