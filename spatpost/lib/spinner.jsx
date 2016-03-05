@@ -8,7 +8,19 @@ if (Meteor.isClient) {
 		// remove the spinner from the DOM after a delay
 		setTimeout(function() {
 			$(".spinner").fadeOut(50, function() { $(this).remove(); });
+
+			console.log('init masonry plugin');
+			var $grid = $('.grid').masonry({
+	            // options
+	            itemSelector: '.grid-item',
+	            columnWidth: 200,
+	            gutter: 10
+	        });
 		}, 5000);
+
+
+		
+		
 
 
 	});
