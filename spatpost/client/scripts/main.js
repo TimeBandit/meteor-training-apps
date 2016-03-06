@@ -8,10 +8,5 @@
         $('#theMenu').toggleClass('menu-open');
         console.log('toggle clicked');
     });
-
-
-
-
 })(jQuery)
-
 

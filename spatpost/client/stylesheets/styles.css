@@ -370,3 +370,24 @@ form p {
         text-align: center
     }
 }*/
+
+.tweet {
+	transition: color 1.5s ease;
+	color: transparent;
+
+}
+
+.tweet:hover{
+	transition: color 1.5s ease;
+	color: #000000;
+}
+
+.tweet > .tw_img{
+	transition: opacity 1.5s ease;
+	opacity: 1;
+}
+
+.tweet > .tw_img:hover{
+	transition: opacity 1.5s ease;
+	opacity: 0;
+}

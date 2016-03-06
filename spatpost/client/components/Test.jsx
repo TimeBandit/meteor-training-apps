@@ -35,6 +35,10 @@ Test = React.createClass({
           });
 	},
 
+    imgClicked: function(){
+        console.log('image got clicked');
+    },
+
     renderTweets: function(){
         var res = [],
             tweets = this.state.tweets;
@@ -48,24 +52,26 @@ Test = React.createClass({
                 width: '250px',
                 boxShadow: '2px 2px 2px #777777'
             },
-            img: {
+            tw_img: {
                 margin: '0px 0px 10px 0px',
                 backgroundRepeat: 'no-repeat',
-                width: '200px'     
+                width: '200px'    
             },
-            text: {
+            tw_text: {
                 fontSize: '8pt',
-                margin: '10px auto',
-                borderBottom: '1px solid black',
                 width: '150px',
-                textAlign: 'center'
+                textAlign: 'center',
+                position: 'absolute',
+                top: '25px',
+                left: '25px'
             },
             created_at: {
                 marginTop: '5px',
                 fontSize: '6pt'
             },
             grid_item: { 
-                marginBottom: '10px'
+                marginBottom: '10px',
+                position: 'relative'
             }
         }
 
@@ -89,9 +95,9 @@ Test = React.createClass({
                     // let bgImg = {backgroundImage: url(imgPath)};
                     // let bgImg = {backgroundImage: ""};
                     node = (
-                        <div className="grid-item" key={key}>
-                            <img style={styles.img} src={value.entities.media[0].media_url} alt=""/>
-                            <div style={styles.text} className="text">{text}</div>
+                        <div className="grid-item tweet" key={key} onClick={this.imgClicked}>
+                            <div style={styles.tw_text} className="tw_text">{text}</div>
+                            <img style={styles.tw_img} className="tw_img" src={value.entities.media[0].media_url} alt=""/>                            
                         </div>                        
                     );
                     
