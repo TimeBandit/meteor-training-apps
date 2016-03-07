@@ -391,3 +391,7 @@ form p {
 	transition: opacity 1.5s ease;
 	opacity: 0;
 }
+
+.disabledText {
+	color: 'red';
+}

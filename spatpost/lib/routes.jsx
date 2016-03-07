@@ -28,6 +28,13 @@ FlowRouter.route('/test', {
 	}
 })
 
+FlowRouter.route('/orderform', {
+	name: 'Login',
+	action(params) {
+		renderMainLayout(<OrderForm />);
+	}
+})
+
 function renderMainLayout(component){
 	ReactLayout.render(MainLayout, {
 		content: component,
