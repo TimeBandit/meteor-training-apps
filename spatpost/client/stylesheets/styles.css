@@ -392,6 +392,19 @@ form p {
 	opacity: 0;
 }
 
+.enabledText {
+	transition: opacity 1.5s ease;
+	opacity: 1;
+}
+
 .disabledText {
-	color: 'red';
+	transition: opacity 1.5s ease;
+	opacity: 0.2;
+}
+
+.message {
+	font-family: monospace;
+	font-size: 18pt;
+	border-radius: 10px;
+	resize: none;
 }

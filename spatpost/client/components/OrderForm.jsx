@@ -12,42 +12,48 @@ OrderForm = React.createClass({
 	getInitialState: function() {
 		return {
 			message: "",
-			disable: ""
+			disabled: true
 		};
 	},
 
 	onChange: function (e) {
 		 e.preventDefault();
-		 let message = this.refs.message.value;
-
-		 if (0 <= message.length <= 15) {
+		 
+		 if (e.target.value) {
+		 	// entered value is less than 75
+		 	if (e.target.value.length <= 75) {
+		 		
+		 		this.setState({
+			 		message: e.target.value,
+			 		disabled: false
+		 		});
+		 	} else {
+			 	// disbale the button is string exceeds limit
+			 	this.setState({
+			 		disabled: true
+			 	});
+			 }
+		 }else {
+		 	// final char removed
 		 	this.setState({
-		 		message: message,
-		 	});
-		 } else {
-		 	this.setState({
-		 		disable: "true" 
-		 	});
+			 		message: "",
+			 		disabled: true
+		 		});
 		 }
-
-		 
-		 
-		 console.log(message);
 	},
 
 	render: function() {
 		return (
 			<div>
-				<textarea name="message" 
-				ref="message" 
-				id="" 
-				cols="30" 
-				rows="10" 
-				onChange={this.onChange} 
-				value={this.state.message}>
-				</textarea>
+				<textarea className="message" name="message" ref="message" 
+				id="" cols="20" rows="10" onChange={this.onChange} 
+				value={this.state.message}></textarea>
+
 				<br/>
-				<input className={this.state.disable? 'disabledText' : null} type="button" value="test" disabled={this.state.disable}/>
+				<input type="button" value="dummy"/>
+
+				<input className={this.state.disabled ? 'disabledText' : 'enabledText'} 
+				type="button" value="BUY NOW" disabled={this.state.disabled}/>
 			</div>
 		);
 	}
